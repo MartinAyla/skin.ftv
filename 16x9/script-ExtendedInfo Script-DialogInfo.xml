@@ -18,11 +18,23 @@
 		<control id="1150" type="list" />
 		<control id="1250" type="list" />
 		<control id="1350" type="list" />
+		<!-- Hidden Biography -->
+		<control type="textbox">
+			<left>-1200</left>
+			<width>1192</width>
+			<height>172</height>
+			<align>left</align>
+			<font>Reg30Spaced</font>
+			<autoscroll>false</autoscroll>
+			<textcolor>ffbbbbbb</textcolor>
+			<pagecontrol>96</pagecontrol>
+			<label>[COLOR ff717171][B]$LOCALIZE[21887][/B][/COLOR]  [LIGHT]$INFO[Window.Property(Biography)][/LIGHT]</label>
+		</control>
 		<!-- Hidden scrollbar -->
 		<control id="96" type="scrollbar">
 			<left>-1200</left>
 			<width>1192</width>
-			<height>160</height>
+			<height>172</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -37,7 +49,7 @@
 				<control type="image">
 					<width>290</width>
 					<height>430</height>
-					<texture fallback="views/cast_fallback.png">$INFO[Window.Property(actor.thumb)]</texture>
+					<texture fallback="views/cast_fallback.png">$INFO[Window.Property(thumb)]</texture>
 					<aspectratio aligny="center">scale</aspectratio>
 				</control>
 				<control id="7000" type="button">
@@ -88,7 +100,7 @@
 					<scroll>true</scroll>
 					<textcolor>ffdadada</textcolor>
 					<scrollspeed>100</scrollspeed>
-					<label>$INFO[Window.Property(actor.title)]</label>
+					<label>$INFO[Window.Property(title)]</label>
 					<include>DialogVideoInfoAnimation</include>
 				</control>
 				<!-- Born -->
@@ -97,7 +109,7 @@
 					<height>36</height>
 					<itemgap>20</itemgap>
 					<include>DialogVideoInfoAnimation</include>
-					<visible>!IsEmpty(Container(150).ListItem(0).Label) + !IsEmpty(Window.Property(actor.Birthday))</visible>
+					<visible>!IsEmpty(Container(150).ListItem(0).Label) + !IsEmpty(Window.Property(Birthday))</visible>
 					<animation condition="Control.HasFocus(150) | Control.HasFocus(250)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 					<animation condition="!Control.HasFocus(150) + !Control.HasFocus(250)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 					<control type="textbox">
@@ -107,7 +119,7 @@
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
 						<textcolor>ffbbbbbb</textcolor>
-						<label>[COLOR ff717171][B]$LOCALIZE[21893][/B][/COLOR]  [LIGHT]$INFO[Window.Property(actor.Birthday)][/LIGHT]</label>
+						<label>[COLOR ff717171][B]$LOCALIZE[21893][/B][/COLOR]  [LIGHT]$INFO[Window.Property(Birthday)][/LIGHT]</label>
 						<include>DialogVideoInfoAnimation</include>
 					</control>
 				</control>
@@ -120,14 +132,14 @@
 					<!-- Biography -->
 					<control type="textbox">
 						<width>1192</width>
-						<height max="160">auto</height>
+						<height max="124">172</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
 						<textcolor>ffbbbbbb</textcolor>
 						<pagecontrol>96</pagecontrol>
-						<label>[COLOR ff717171][B]$LOCALIZE[21887][/B][/COLOR]  [LIGHT]$INFO[Window.Property(actor.Biography)][/LIGHT]</label>
-						<visible>!IsEmpty(Window.Property(actor.Biography))</visible>
+						<label>[COLOR ff717171][B]$LOCALIZE[21887][/B][/COLOR]  [LIGHT]$INFO[Window.Property(Biography)][/LIGHT]</label>
+						<visible>!IsEmpty(Window.Property(Biography))</visible>
 					</control>
 					<!-- More button -->
 					<control id="3000" type="button">
@@ -141,8 +153,8 @@
 						<onleft>7000</onleft>
 						<onright>8</onright>
 						<onclick>SetProperty(OpenTextViewer,1,home)</onclick>
-						<onclick>RunScript(script.toolbox,info=textviewer,header=,text='"$INFO[Window.Property(actor.Biography)]"')</onclick>
-						<visible>Control.IsVisible(96)</visible>
+						<onclick>RunScript(script.toolbox,info=textviewer,header=,text='"$INFO[Window.Property(Biography)]"')</onclick>
+						<visible>Control.IsVisible(96) + !IsEmpty(Window.Property(Biography))</visible>
 						<include>DialogVideoInfoAnimation</include>
 						<texturefocus>views/more_fo.png</texturefocus>
 						<texturenofocus>views/more_nf.png</texturenofocus>
@@ -181,7 +193,7 @@
 				<height>32</height>
 				<font>Bold30</font>
 				<textcolor>ff717171</textcolor>
-				<label>$INFO[Window.Property(actor.title),$LOCALIZE[31204] ]</label>
+				<label>$INFO[Window.Property(title),$LOCALIZE[31204] ]</label>
 				<visible>IsEmpty(Window(home).Property(StarredInTV)) + !IsEmpty(Container(150).ListItem.Label) + !Control.HasFocus(150)</visible>
 				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>
@@ -470,7 +482,7 @@
 				<height>32</height>
 				<font>Bold30</font>
 				<textcolor>ff717171</textcolor>
-				<label>$INFO[Window.Property(actor.title),Titles with ]</label>
+				<label>$INFO[Window.Property(title),Titles with ]</label>
 				<visible>!IsEmpty(Window(home).Property(StarredInTV)) + !IsEmpty(Container(250).ListItem.Label) + !Control.HasFocus(250)</visible>
 				<animation delay="400" effect="fade" end="100" start="0" time="200">Visible</animation>
 				<animation effect="fade" end="0" start="100" time="0">Hidden</animation>

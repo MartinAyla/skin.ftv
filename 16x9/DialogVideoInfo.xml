@@ -21,7 +21,7 @@
 		<control type="textbox">
 			<left>-1200</left>
 			<width>1192</width>
-			<height>124</height>
+			<height>126</height>
 			<align>left</align>
 			<font>Light30Spaced</font>
 			<pagecontrol>96</pagecontrol>
@@ -33,7 +33,7 @@
 		<control id="96" type="scrollbar">
 			<left>-1200</left>
 			<width>1192</width>
-			<height>124</height>
+			<height>126</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -202,7 +202,7 @@
 				<include condition="Stringcompare(Skin.String(RatingCountry),UK)">Rating_BBFC</include>
 				<include condition="Stringcompare(Skin.String(RatingCountry),Germany)">Rating_FSK</include>
 			</control>
-			<!-- Star rating / Votes / Rating -->
+			<!-- Star rating / Rating -->
 			<control type="grouplist">
 				<top>100</top>
 				<height>40</height>
@@ -216,7 +216,7 @@
 					<top>2</top>
 					<width>147</width>
 					<height>24</height>
-					<texture>$VAR[StarRating]</texture>
+					<texture>$INFO[ListItem.UserRating,rating/rating,.png]</texture>
 					<aspectratio align="left">keep</aspectratio>
 					<visible>!IsEmpty(ListItem.UserRating)</visible>
 				</control>
@@ -224,7 +224,7 @@
 					<top>2</top>
 					<width>147</width>
 					<height>24</height>
-					<texture>$VAR[SeasonStarRating]</texture>
+					<texture>$INFO[Window(home).Property(TVShowRating),rating/rating,.png]</texture>
 					<aspectratio align="left">keep</aspectratio>
 					<visible>!IsEmpty(Window(home).Property(TVShowRating)) + IsEmpty(ListItem.Rating) + !Container.Content(episodes)</visible>
 				</control>

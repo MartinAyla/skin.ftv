@@ -189,10 +189,14 @@
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>Container.Content(albums) + !IsEmpty(ListItem.Rating)</visible>
-				<control type="image">
-					<width>137</width>
-					<height>24</height>
-					<texture>$INFO[ListItem.StarRating]</texture>
+				<control type="label">
+					<top>-13</top>
+					<width>auto</width>
+					<height>34</height>
+					<font>Bold30</font>
+					<aligny>bottom</aligny>
+					<textcolor>ffbcbcbc</textcolor>
+					<label>$INFO[ListItem.Rating,,/5]</label>
 				</control>
 			</control>
 			<control type="group">

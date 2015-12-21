@@ -6,6 +6,7 @@
 		<!-- Background -->
 		<include>DialogBackgroundImage</include>
 		<control type="group">
+			<include>DialogAnimation</include>
 			<left>90</left>
 			<top>258</top>
 			<width>1740</width>
@@ -40,7 +41,7 @@
 				<height>126</height>
 				<width>422</width>
 				<textoffsetx>40</textoffsetx>
-				<textwidth>576</textwidth>
+				<textwidth>342</textwidth>
 				<aligny>center</aligny>
 				<font>Light30Spaced</font>
 				<onright>2</onright>
@@ -71,7 +72,7 @@
 				<width>958</width>
 				<height>84</height>
 				<font>Light32</font>
-				<textwidth>738</textwidth>
+				<textwidth>878</textwidth>
 				<textoffsetx>40</textoffsetx>
 				<textcolor>ff505153</textcolor>
 				<focusedcolor>ffffaf37</focusedcolor>

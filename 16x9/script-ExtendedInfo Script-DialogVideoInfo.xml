@@ -12,8 +12,8 @@
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
 		<control type="button" id="999">
-			<onfocus condition="!IsEmpty(Window.Property(movie.DBID))">SetFocus(8)</onfocus>
-			<onfocus condition="IsEmpty(Window.Property(movie.DBID))">SetFocus(7000)</onfocus>
+			<onfocus condition="!IsEmpty(Window.Property(DBID))">SetFocus(8)</onfocus>
+			<onfocus condition="IsEmpty(Window.Property(DBID))">SetFocus(7000)</onfocus>
 		</control>
 		<!-- Hidden Lists -->
 		<control id="250" type="list" />
@@ -32,19 +32,19 @@
 		<control type="textbox">
 			<left>-1200</left>
 			<width>1192</width>
-			<height>124</height>
+			<height>126</height>
 			<align>left</align>
 			<font>Light30Spaced</font>
 			<pagecontrol>96</pagecontrol>
 			<autoscroll>false</autoscroll>
 			<textcolor>ffbbbbbb</textcolor>
-			<label>$INFO[Window.Property(Movie.Plot)]</label>
+			<label>$INFO[Window.Property(Plot)]</label>
 		</control>
 		<!-- Hidden scrollbar -->
 		<control id="96" type="scrollbar">
 			<left>-1200</left>
 			<width>1192</width>
-			<height>122</height>
+			<height>126</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>
@@ -55,7 +55,7 @@
 			<control type="image">
 				<include>FullscreenDimensions</include>
 				<colordiffuse>26ffffff</colordiffuse>
-				<texture background="true">$INFO[Window.Property(movie.fanart)]</texture>
+				<texture background="true">$INFO[Window.Property(fanart)]</texture>
 			</control>
 			<include>DialogVideoInfoAnimation</include>
 		</control>
@@ -68,7 +68,7 @@
 			<control type="image">
 				<width>320</width>
 				<height>480</height>
-				<texture>$INFO[Window.Property(movie.Poster)]</texture>
+				<texture>$INFO[Window.Property(Poster)]</texture>
 				<aspectratio aligny="center">scale</aspectratio>
 			</control>
 			<control id="7000" type="button">
@@ -119,7 +119,7 @@
 				<scroll>true</scroll>
 				<textcolor>ffdadada</textcolor>
 				<scrollspeed>100</scrollspeed>
-				<label>$INFO[Window.Property(movie.Title)]</label>
+				<label>$INFO[Window.Property(Title)]</label>
 				<include>DialogVideoInfoAnimation</include>
 			</control>
 			<!-- Year / Runtime / Rating -->
@@ -139,8 +139,8 @@
 					<font>Light32</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
-					<label>$INFO[Window.Property(movie.year)]</label>
-					<visible>!IsEmpty(Window.Property(movie.year))</visible>
+					<label>$INFO[Window.Property(year)]</label>
+					<visible>!IsEmpty(Window.Property(year))</visible>
 				</control>
 				<control type="label">
 					<top>-6</top>
@@ -150,7 +150,7 @@
 					<aligny>bottom</aligny>
 					<textcolor>ffbebebe</textcolor>
 					<label>$VAR[ExtendedDuration] </label>
-					<visible>!IsEmpty(Window.Property(movie.Duration))</visible>
+					<visible>!IsEmpty(Window.Property(Duration))</visible>
 				</control>
 				<control type="image">
 					<top>3</top>
@@ -158,7 +158,7 @@
 					<height>23</height>
 					<colordiffuse>ffdadada</colordiffuse>
 					<texture>rating/cc.png</texture>
-					<visible>!IsEmpty(Window.Property(movie.SubtitleLanguage))</visible>
+					<visible>!IsEmpty(Window.Property(SubtitleLanguage))</visible>
 				</control>
 			</control>
 			<!-- Star rating / Votes / Rating -->
@@ -176,14 +176,14 @@
 					<width>48</width>
 					<height>23</height>
 					<texture>views/imdb.png</texture>
-					<visible>!IsEmpty(Window.Property(movie.rating)) + !Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(Window.Property(rating)) + !Container.Content(tvshows)</visible>
 				</control>
 				<control type="image">
 					<top>3</top>
 					<width>47</width>
 					<height>23</height>
 					<texture>views/tvdb.png</texture>
-					<visible>!IsEmpty(Window.Property(movie.rating)) + Container.Content(tvshows)</visible>
+					<visible>!IsEmpty(Window.Property(rating)) + Container.Content(tvshows)</visible>
 				</control>
 				<control type="label">
 					<top>-13</top>
@@ -192,8 +192,8 @@
 					<font>Bold30</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
-					<label>$INFO[Window.Property(movie.rating),,/10]</label>
-					<visible>!IsEmpty(Window.Property(movie.rating))</visible>
+					<label>$INFO[Window.Property(rating),,/10]</label>
+					<visible>!IsEmpty(Window.Property(rating))</visible>
 				</control>
 			</control>
 			<control type="grouplist">
@@ -201,7 +201,7 @@
 				<width>2800</width>
 				<height>1400</height>
 				<itemgap>0</itemgap>
-				<ondown condition="!IsEmpty(Window.Property(movie.DBID))">8</ondown>
+				<ondown condition="!IsEmpty(Window.Property(DBID))">8</ondown>
 				<ondown condition="IntegerGreaterThan(Container(1150).NumItems,0)">206</ondown>
 				<ondown>1000</ondown>
 				<orientation>vertical</orientation>
@@ -215,9 +215,9 @@
 					<font>Light30Spaced</font>
 					<autoscroll>false</autoscroll>
 					<textcolor>ffbbbbbb</textcolor>
-					<label>$INFO[Window.Property(Movie.Plot)]</label>
+					<label>$INFO[Window.Property(Plot)]</label>
 					<include>DialogVideoInfoAnimation</include>
-					<visible>!IsEmpty(Window.Property(Movie.Plot))</visible>
+					<visible>!IsEmpty(Window.Property(Plot))</visible>
 				</control>
 				<control id="3003" type="button">
 					<onfocus>Close</onfocus>
@@ -231,7 +231,7 @@
 					<height>23</height>
 					<onleft>7000</onleft>
 					<onright>8</onright>
-					<onclick>RunScript(script.toolbox,info=textviewer,header=,text='"$INFO[Window.Property(movie.Plot)]"')</onclick>
+					<onclick>RunScript(script.toolbox,info=textviewer,header=,text='"$INFO[Window.Property(Plot)]"')</onclick>
 					<include>DialogVideoInfoAnimation</include>
 					<texturefocus>views/more_fo.png</texturefocus>
 					<texturenofocus>views/more_nf.png</texturenofocus>
@@ -287,7 +287,7 @@
 				<include>DialogVideoInfoAnimation</include>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
-				<visible>!IsEmpty(Window.Property(movie.director))</visible>
+				<visible>!IsEmpty(Window.Property(director))</visible>
 				<animation condition="Control.HasFocus(1000) | Control.HasFocus(150)" effect="fade" end="0" start="100" time="0">Conditional</animation>
 				<animation condition="!Control.HasFocus(1000) + !Control.HasFocus(150)" delay="200" effect="fade" end="100" start="0" time="80">Conditional</animation>
 				<control type="label">
@@ -305,7 +305,7 @@
 					<font>Light30Spaced</font>
 					<aligny>bottom</aligny>
 					<textcolor>ffbcbcbc</textcolor>
-					<label>$INFO[Window.Property(movie.director)]</label>
+					<label>$INFO[Window.Property(director)]</label>
 				</control>
 			</control>
 			<!-- Button grouplist -->
@@ -346,7 +346,7 @@
 					<focusedcolor>ff222222</focusedcolor>
 					<texturefocus border="13,5,6,8">views/button_fo.png</texturefocus>
 					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
-					<visible>!IsEmpty(Window.Property(movie.DBID))</visible>
+					<visible>!IsEmpty(Window.Property(DBID))</visible>
 				</control>
 			</control>
 		</control>
@@ -372,7 +372,7 @@
 				<top>-271</top>
 				<width>2600</width>
 				<height>576</height>
-				<onup condition="!IsEmpty(Window.Property(movie.DBID)) | IntegerGreaterThan(Container(1150).NumItems,0)">9001</onup>
+				<onup condition="!IsEmpty(Window.Property(DBID)) | IntegerGreaterThan(Container(1150).NumItems,0)">9001</onup>
 				<onup condition="Control.IsVisible(96)">3002</onup>
 				<onup>noop</onup>
 				<ondown>noop</ondown>

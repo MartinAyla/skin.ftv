@@ -239,7 +239,7 @@
 					<control type="textbox">
 						<top>107</top>
 						<width>1192</width>
-						<height>124</height>
+						<height>126</height>
 						<align>left</align>
 						<font>Reg30Spaced</font>
 						<pagecontrol>98</pagecontrol>
@@ -250,7 +250,7 @@
 					<control id="98" type="scrollbar">
 						<top>105</top>
 						<width>1192</width>
-						<height>124</height>
+						<height>126</height>
 						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
@@ -280,11 +280,10 @@
 						<visible>Window.IsVisible(textviewer)</visible>
 					</control>
 				</control>
-				<!-- Time -->
 				<control type="textbox">
 					<top>105</top>
 					<width>1192</width>
-					<height>124</height>
+					<height>126</height>
 					<align>left</align>
 					<font>Light32</font>
 					<pagecontrol>98</pagecontrol>

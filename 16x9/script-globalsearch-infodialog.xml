@@ -39,7 +39,7 @@
 		<control type="textbox">
 			<left>-1200</left>
 			<width>1192</width>
-			<height>124</height>
+			<height>126</height>
 			<align>left</align>
 			<font>Light30Spaced</font>
 			<pagecontrol>96</pagecontrol>
@@ -51,7 +51,7 @@
 		<control id="96" type="scrollbar">
 			<left>-1200</left>
 			<width>1192</width>
-			<height>124</height>
+			<height>126</height>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 		</control>

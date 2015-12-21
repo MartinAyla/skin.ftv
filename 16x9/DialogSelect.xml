@@ -38,13 +38,13 @@
 			<control type="image">
 				<width>1437</width>
 				<height>480</height>
-				<texture>settings/category_back_list_3.png</texture>
+				<texture>settings/category_back.png</texture>
 				<visible>Control.IsVisible(5)</visible>
 			</control>
 			<control type="image">
 				<width>958</width>
 				<height>480</height>
-				<texture>settings/category_back_list_3_no_button.png</texture>
+				<texture>settings/category_back_no_button.png</texture>
 				<visible>!Control.IsVisible(5)</visible>
 			</control>
 			<control type="label">
@@ -171,7 +171,7 @@
 			<control type="image">
 				<width>1437</width>
 				<height>480</height>
-				<texture>settings/category_back_list_6.png</texture>
+				<texture>settings/category_back_list.png</texture>
 			</control>
 			<control type="label">
 				<left>40</left>
