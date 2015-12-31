@@ -876,3 +876,63 @@ msgstr ""
 msgctxt "#31209"
 msgid "Disable Higher Levels"
 msgstr ""
+
+msgctxt "#31210"
+msgid "Widget Group 1"
+msgstr ""
+
+msgctxt "#31211"
+msgid "Widget Group 2"
+msgstr ""
+
+msgctxt "#31212"
+msgid "Widget Group 3"
+msgstr ""
+
+msgctxt "#31213"
+msgid "Widget Group 4"
+msgstr ""
+
+msgctxt "#31214"
+msgid "Widget Group 5"
+msgstr ""
+
+msgctxt "#31215"
+msgid "Widget Group 6"
+msgstr ""
+
+msgctxt "#31216"
+msgid "Widget Group 7"
+msgstr ""
+
+msgctxt "#31217"
+msgid "Widget Group 8"
+msgstr ""
+
+msgctxt "#31218"
+msgid "Select Widget Group"
+msgstr ""
+
+msgctxt "#31219"
+msgid "Customise Widget Group"
+msgstr ""
+
+msgctxt "#31220"
+msgid "Updating widgets"
+msgstr ""
+
+msgctxt "#31221"
+msgid "Audio Add-ons"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Program Add-ons"
+msgstr ""
+
+msgctxt "#31223"
+msgid "Video Add-ons"
+msgstr ""
+
+msgctxt "#31224"
+msgid "Picture Add-ons"
+msgstr ""

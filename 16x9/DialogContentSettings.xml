@@ -9,189 +9,83 @@
 			<include>DialogAnimation</include>
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
-			<width>1740</width>
+			<width>1337</width>
 			<height>564</height>
 			<control type="image">
-				<width>1740</width>
+				<width>1337</width>
 				<height>564</height>
-				<texture>dialogs/addon_settings_back.png</texture>
+				<texture>dialogs/network_back.png</texture>
 			</control>
 			<!-- Heading -->
 			<control type="label">
 				<left>40</left>
 				<top>14</top>
 				<height>30</height>
-				<width>1361</width>
+				<width>937</width>
 				<aligny>center</aligny>
 				<font>Bold30</font>
 				<label>20333</label>
 				<textcolor>ffdadada</textcolor>
 			</control>
-			<!-- Scraper list -->
-			<control type="list" id="21">
-				<top>60</top>
-				<width>422</width>
-				<height>504</height>
-				<onleft>noop</onleft>
-				<onright>9000</onright>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<scrolltime>0</scrolltime>
-				<orientation>vertical</orientation>
-				<itemlayout height="126" width="422">
-					<control type="image">
-						<width>422</width>
-						<height>126</height>
-						<texture border="3">settings/button_no_focus.png</texture>
-					</control>
-					<control type="image">
-						<left>26</left>
-						<top>16</top>
-						<width>94</width>
-						<height>94</height>
-						<texture>$INFO[Listitem.Icon]</texture>
-						<aspectratio aligny="center">keep</aspectratio>
-					</control>
-					<control type="label">
-						<left>146</left>
-						<width>256</width>
-						<height>126</height>
-						<font>Light32</font>
-						<textcolor>ff505153</textcolor>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="126" width="422">
-					<control type="image">
-						<width>422</width>
-						<height>126</height>
-						<texture border="3">settings/button_focus.png</texture>
-					</control>
-					<control type="image">
-						<left>26</left>
-						<top>16</top>
-						<width>94</width>
-						<height>94</height>
-						<texture>$INFO[Listitem.Icon]</texture>
-						<aspectratio aligny="center">keep</aspectratio>
-					</control>
-					<control type="label">
-						<left>146</left>
-						<width>256</width>
-						<height>126</height>
-						<font>Light32</font>
-						<textcolor>ffffaf37</textcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>Control.HasFocus(21)</visible>
-					</control>
-					<control type="label">
-						<left>146</left>
-						<width>256</width>
-						<height>126</height>
-						<font>Light32</font>
-						<scroll>false</scroll>
-						<textcolor>ffffffff</textcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>!Control.HasFocus(21)</visible>
-					</control>
-				</focusedlayout>
-			</control>
-			<control type="group">
-				<top>60</top>
-				<width>422</width>
-				<height>504</height>
-				<visible>!Control.IsVisible(21)</visible>
-				<control type="image">
-					<width>422</width>
-					<height>126</height>
-					<texture border="3">settings/button_focus.png</texture>
-				</control>
-				<control type="image">
-					<left>26</left>
-					<top>16</top>
-					<width>94</width>
-					<height>94</height>
-					<texture>DefaultAddon.png</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-				</control>
-				<control type="label">
-					<left>146</left>
-					<width>256</width>
-					<height>126</height>
-					<font>Light32</font>
-					<textcolor>ffffffff</textcolor>
-					<label>$INFO[Control.GetLabel(20)]</label>
-				</control>
-			</control>
 			<control type="group" id="9000">
-				<left>422</left>
 				<top>60</top>
-				<width>958</width>
+				<width>937</width>
 				<!-- Content Picker -->
-				<control type="spincontrolex" id="20">
-					<width>958</width>
+				<control type="button" id="20">
+					<width>937</width>
 					<height>84</height>
-					<onleft>21</onleft>
 					<onright>9001</onright>
-					<ondown>5</ondown>
-					<font>-</font>
+					<ondown>21</ondown>
+					<font>Light32</font>
 					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<aligny>center</aligny>
-					<reverse>yes</reverse>
 				</control>
-				<!-- Content Picker Header (focused) -->
-				<control type="label">
-					<left>40</left>
-					<width>777</width>
+				<!-- Content provider (empty) -->
+				<control type="button">
+					<top>84</top>
+					<width>937</width>
 					<height>84</height>
+					<onup>20</onup>
+					<onright>9001</onright>
+					<ondown>5</ondown>
 					<font>Light32</font>
-					<textcolor>ffffaf37</textcolor>
-					<label>20344</label>
-					<visible>Control.HasFocus(20)</visible>
+					<label>38025</label>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>DisabledColor</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<aligny>center</aligny>
 				</control>
-				<!-- Content Picker Header (not focused) -->
-				<control type="label">
-					<left>40</left>
-					<width>777</width>
+				<!-- Content provider -->
+				<control type="button" id="21">
+					<top>84</top>
+					<width>937</width>
 					<height>84</height>
+					<onup>20</onup>
+					<onright>9001</onright>
+					<ondown>5</ondown>
 					<font>Light32</font>
+					<textoffsetx>40</textoffsetx>
 					<textcolor>ff505153</textcolor>
-					<label>20344</label>
-					<visible>!Control.HasFocus(20)</visible>
-				</control>
-				<!-- Content Picker Label (focused) -->
-				<control type="label">
-					<right>140</right>
-					<width>777</width>
-					<height>84</height>
-					<align>right</align>
-					<font>Light32</font>
-					<textcolor>ffffaf37</textcolor>
-					<label>$INFO[Control.GetLabel(20)]</label>
-					<visible>Control.HasFocus(20)</visible>
-				</control>
-				<!-- Content Picker Label (not focused) -->
-				<control type="label">
-					<right>140</right>
-					<width>777</width>
-					<height>84</height>
-					<align>right</align>
-					<font>Light32</font>
-					<textcolor>ff505153</textcolor>
-					<label>$INFO[Control.GetLabel(20)]</label>
-					<visible>!Control.HasFocus(20)</visible>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<aligny>center</aligny>
 				</control>
 				<!-- Control grouplist -->
 				<control type="grouplist" id="5">
-					<top>84</top>
-					<width>958</width>
+					<top>168</top>
+					<width>937</width>
 					<height>504</height>
 					<itemgap>0</itemgap>
 					<onleft>21</onleft>
 					<onright>9001</onright>
-					<onup>20</onup>
+					<onup>21</onup>
 					<ondown>noop</ondown>
 					<scrolltime>0</scrolltime>
 					<orientation>vertical</orientation>
@@ -199,10 +93,10 @@
 				</control>
 				<!-- Default button -->
 				<control type="button" id="7">
-					<width>958</width>
+					<width>937</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textwidth>738</textwidth>
+					<textwidth>857</textwidth>
 					<textoffsetx>40</textoffsetx>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
@@ -211,16 +105,16 @@
 				</control>
 				<!-- Default radiobutton -->
 				<control type="radiobutton" id="8">
-					<width>958</width>
+					<width>937</width>
 					<height>84</height>
 					<font>Light32</font>
-					<textwidth>738</textwidth>
+					<textwidth>717</textwidth>
 					<textoffsetx>40</textoffsetx>
 					<textcolor>ff505153</textcolor>
 					<focusedcolor>ffffaf37</focusedcolor>
 					<radiowidth>125</radiowidth>
 					<radioheight>53</radioheight>
-					<radioposx>813</radioposx>
+					<radioposx>773</radioposx>
 					<textureradioonfocus>settings/radio_on_focus.png</textureradioonfocus>
 					<textureradioonnofocus>settings/radio_on_no_focus.png</textureradioonnofocus>
 					<textureradioondisabled>settings/radio_on_disabled.png</textureradioondisabled>
@@ -231,10 +125,11 @@
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 				</control>
 			</control>
+			<!-- Right grouplist -->
 			<control type="grouplist" id="9001">
 				<right>24</right>
 				<bottom>33</bottom>
-				<width>311</width>
+				<width>351</width>
 				<height>420</height>
 				<onleft>9000</onleft>
 				<onright>noop</onright>
@@ -245,7 +140,7 @@
 				<align>right</align>
 				<!-- Settings Button -->
 				<control type="button" id="22">
-					<width>311</width>
+					<width>351</width>
 					<height>76</height>
 					<aligny>top</aligny>
 					<font>Med24</font>
@@ -256,7 +151,7 @@
 				</control>
 				<!-- Cancel Button -->
 				<control type="button" id="29">
-					<width>311</width>
+					<width>351</width>
 					<height>76</height>
 					<aligny>top</aligny>
 					<font>Med24</font>
@@ -267,7 +162,7 @@
 				</control>
 				<!-- OK Button -->
 				<control type="button" id="28">
-					<width>311</width>
+					<width>351</width>
 					<height>76</height>
 					<aligny>top</aligny>
 					<font>Med24</font>

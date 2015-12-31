@@ -8,28 +8,30 @@
 			<include>HiddenControl</include>
 			<onleft>noop</onleft>
 			<onright>303</onright>
-			<onup>Control.Move(211,-1)</onup>
-			<ondown>Control.Move(211,1)</ondown>
+			<onup condition="!IsEmpty(Container(211).ListItemNoWrap(-1).Label)">Control.Move(211,-1)</onup>
+			<ondown condition="!IsEmpty(Container(211).ListItemNoWrap(1).Label)">Control.Move(211,1)</ondown>
+			<ondown condition="IsEmpty(Container(211).ListItemNoWrap(1).Label)">9001</ondown>
 		</control>
 		<!-- Move up -->
 		<control type="button" id="303">
 			<include>HiddenControl</include>
 			<onleft>304</onleft>
 			<onright>9000</onright>
-			<onup>Control.Move(211,-1)</onup>
-			<ondown>Control.Move(211,1)</ondown>
+			<onup condition="!IsEmpty(Container(211).ListItemNoWrap(-1).Label)">Control.Move(211,-1)</onup>
+			<ondown condition="!IsEmpty(Container(211).ListItemNoWrap(1).Label)">Control.Move(211,1)</ondown>
+			<ondown condition="IsEmpty(Container(211).ListItemNoWrap(1).Label)">9001</ondown>
 		</control>
 		<include>DialogBackgroundImage</include>
 		<!-- Main group -->
 		<control type="group">
 			<left>190</left>
-			<top>174</top>
+			<centertop>50%</centertop>
 			<width>1540</width>
-			<height>664</height>
+			<height>748</height>
 			<include>DialogZoomAnimation</include>
 			<control type="image">
 				<width>1540</width>
-				<height>664</height>
+				<height>748</height>
 				<texture>dialogs/skin_shortcuts_back.png</texture>
 			</control>
 			<!-- Heading -->
@@ -59,7 +61,7 @@
 			<control type="list" id="211">
 				<top>60</top>
 				<width>670</width>
-				<height>504</height>
+				<height>588</height>
 				<onleft>noop</onleft>
 				<onright>304</onright>
 				<onup>noop</onup>
@@ -202,6 +204,21 @@
 					<label>$ADDON[script.skinshortcuts 32027]</label>
 					<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
 				</control>
+				<!-- Select widget group -->
+				<control id="309" type="button">
+					<width>870</width>
+					<height>84</height>
+					<font>Light32</font>
+					<textwidth>790</textwidth>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<label>31218</label>
+					<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
+					<visible>!StringCompare(Container(211).ListItem.Property(defaultID),settings) + !StringCompare(Container(211).ListItem.Property(defaultID),weather) + !StringCompare(Container(211).ListItem.Property(defaultID),favourites) + !StringCompare(Container(211).ListItem.Property(defaultID),19019)</visible>
+				</control>
 				<control id="997" type="button">
 					<width>870</width>
 					<height>84</height>
@@ -212,10 +229,10 @@
 					<focusedcolor>DisabledColor</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-					<label>$ADDON[script.skinshortcuts 32072] #$INFO[Container(211).CurrentItem]</label>
-					<visible>IntegerGreaterThan(Container(211).CurrentItem,8) | StringCompare(Container(211).ListItem.Property(defaultID),settings) | StringCompare(Container(211).ListItem.Property(defaultID),weather) | StringCompare(Container(211).ListItem.Property(defaultID),favourites)</visible>
+					<label>31218</label>
+					<visible>StringCompare(Container(211).ListItem.Property(defaultID),settings) | StringCompare(Container(211).ListItem.Property(defaultID),weather) | StringCompare(Container(211).ListItem.Property(defaultID),favourites)</visible>
 				</control>
-				<!-- Manage widgets -->
+				<!-- Customise widget grouop -->
 				<control id="998" type="button">
 					<width>870</width>
 					<height>84</height>
@@ -226,17 +243,31 @@
 					<focusedcolor>ffffaf37</focusedcolor>
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
-					<label>$ADDON[script.skinshortcuts 32072] #$INFO[Container(211).CurrentItem]</label>
-					<onclick condition="StringCompare(Container(211).CurrentItem,1)">SetProperty(SubMenu,1,home)</onclick>
-					<onclick condition="StringCompare(Container(211).CurrentItem,2)">SetProperty(SubMenu,2,home)</onclick>
-					<onclick condition="StringCompare(Container(211).CurrentItem,3)">SetProperty(SubMenu,3,home)</onclick>
-					<onclick condition="StringCompare(Container(211).CurrentItem,4)">SetProperty(SubMenu,4,home)</onclick>
-					<onclick condition="StringCompare(Container(211).CurrentItem,5)">SetProperty(SubMenu,5,home)</onclick>
-					<onclick condition="StringCompare(Container(211).CurrentItem,6)">SetProperty(SubMenu,6,home)</onclick>
-					<onclick condition="StringCompare(Container(211).CurrentItem,7)">SetProperty(SubMenu,7,home)</onclick>
-					<onclick condition="StringCompare(Container(211).CurrentItem,8)">SetProperty(SubMenu,8,home)</onclick>
-					<visible>!IntegerGreaterThan(Container(211).CurrentItem,8) + !StringCompare(Container(211).ListItem.Property(defaultID),settings) + !StringCompare(Container(211).ListItem.Property(defaultID),weather) + !StringCompare(Container(211).ListItem.Property(defaultID),favourites)</visible>
+					<label>$LOCALIZE[31219]</label>
+					<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
+					<onclick condition="StringCompare(Container(211).ListItem.Property(widget),widget1)">SetProperty(SubMenu,1,home)</onclick>
+					<onclick condition="StringCompare(Container(211).ListItem.Property(widget),widget2)">SetProperty(SubMenu,2,home)</onclick>
+					<onclick condition="StringCompare(Container(211).ListItem.Property(widget),widget3)">SetProperty(SubMenu,3,home)</onclick>
+					<onclick condition="StringCompare(Container(211).ListItem.Property(widget),widget4)">SetProperty(SubMenu,4,home)</onclick>
+					<onclick condition="StringCompare(Container(211).ListItem.Property(widget),widget5)">SetProperty(SubMenu,5,home)</onclick>
+					<onclick condition="StringCompare(Container(211).ListItem.Property(widget),widget6)">SetProperty(SubMenu,6,home)</onclick>
+					<onclick condition="StringCompare(Container(211).ListItem.Property(widget),widget7)">SetProperty(SubMenu,7,home)</onclick>
+					<onclick condition="StringCompare(Container(211).ListItem.Property(widget),widget8)">SetProperty(SubMenu,8,home)</onclick>
+					<visible>SubString(Container(211).ListItem.Property(widget),widget,left)</visible>
 					<onclick>ActivateWindow(1105)</onclick>
+				</control>
+				<control id="996" type="button">
+					<width>870</width>
+					<height>84</height>
+					<font>Light32</font>
+					<textwidth>790</textwidth>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>DisabledColor</textcolor>
+					<focusedcolor>DisabledColor</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<label>$LOCALIZE[31219]</label>
+					<visible>!SubString(Container(211).ListItem.Property(widget),widget,left)</visible>
 				</control>
 				<!-- Remove -->
 				<control type="button" id="302">

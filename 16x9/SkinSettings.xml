@@ -399,7 +399,7 @@
 					<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString(RatingCountry,UK))</onclick>
 					<onclick>SetProperty(Dialog.3.Label,Germany)</onclick>
 					<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString(RatingCountry,Germany))</onclick>
-					<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Rating Country)</onclick> 
+					<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Rating Country)</onclick>
 				</control>
 				<control id="18" type="radiobutton">
 					<width>958</width>

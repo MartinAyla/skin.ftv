@@ -1,3 +1,13 @@
+2.3.0
+
+Skin changes for Kodi v17
+Added better home widget customisation (thanks to sualfred)
+Remove properties and use absolute labels
+Fixed widget sorting problem
+Fixed textboxes
+Fixed Addon Browser focus problem 
+Fixed 'Extended Info' More button
+
 2.2.20
 
 Fix some text widths
