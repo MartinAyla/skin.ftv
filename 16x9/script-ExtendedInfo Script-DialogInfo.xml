@@ -137,7 +137,6 @@
 						<font>Reg30Spaced</font>
 						<autoscroll>false</autoscroll>
 						<textcolor>ffbbbbbb</textcolor>
-						<pagecontrol>96</pagecontrol>
 						<label>[COLOR ff717171][B]$LOCALIZE[21887][/B][/COLOR]  [LIGHT]$INFO[Window.Property(Biography)][/LIGHT]</label>
 						<visible>!IsEmpty(Window.Property(Biography))</visible>
 					</control>

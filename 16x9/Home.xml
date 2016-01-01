@@ -6,7 +6,8 @@
 	<onload>ClearProperty(BounceRight,Home)</onload>
 	<onload condition="Window.Previous(startup)">SetProperty(preload,1,Home)</onload>
 	<onload condition="Window.Previous(startup)">SetProperty(fadeoutdelay,1,Home)</onload>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0&amp;group=mainmenu|shutdown)</onload>
+	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0&amp;group=mainmenu|shutdown)</onload>
+	<onload condition="System.HasAddon(script.skin.helper.service) + System.GetBool(input.enablemouse)">RunScript(script.skin.helper.service,action=togglekodisetting,setting=input.enablemouse)</onload>
 	<controls>
 		<control type="group">
 			<!-- Hide elements until  preloading is done -->
@@ -1568,15 +1569,16 @@
 				<include>WindowHomeFadeAnimation</include>
 				<include>HomeWidgetsAnimation</include>
 				<visible>StringCompare(Container(9000).ListItem.Property(defaultID),weather)</visible>
-				<itemlayout height="914" width="304">
+				<itemlayout height="914" width="297">
 					<control type="image">
-						<width>304</width>
+						<width>297</width>
 						<height>914</height>
+						<aspectratio align="center">scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Property(Fanart)]</texture>
 					</control>
 					<control type="image">
 						<top>321</top>
-						<width>304</width>
+						<width>297</width>
 						<height>272</height>
 						<texture background="true">views/OverlayNF.png</texture>
 					</control>
@@ -1616,15 +1618,16 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="914" width="304">
+				<focusedlayout height="914" width="297">
 					<control type="image">
-						<width>304</width>
+						<width>297</width>
 						<height>914</height>
+						<aspectratio align="center">scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Property(Fanart)]</texture>
 					</control>
 					<control type="image">
 						<top>321</top>
-						<width>304</width>
+						<width>297</width>
 						<height>272</height>
 						<texture background="true">views/OverlayNF.png</texture>
 					</control>
@@ -1848,6 +1851,7 @@
 					<font>Reg27</font>
 					<textcolor>ffa3a3a3</textcolor>
 					<pauseatend>340</pauseatend>
+					<label>[COLOR 00ffffff].[/COLOR]</label>
 					<label>.</label>
 					<label>..</label>
 					<label>...</label>
@@ -1857,6 +1861,8 @@
 		<!-- check if preloading is in progress -->
 		<control type="button" id="90000">
 			<include>HiddenControl</include>
+			<onback>SetFocus(90004)</onback>
+			<onclick>SetFocus(90004)</onclick>
 			<onfocus>SetProperty(preload,1,Home)</onfocus>
 			<onfocus>SetProperty(fadeoutdelay,1,Home)</onfocus>
 			<onfocus condition="Control.IsVisible(90001)">SetFocus(90003)</onfocus>
@@ -1865,6 +1871,8 @@
 		<!-- loop trigger -->
 		<control type="button" id="90003">
 			<include>HiddenControl</include>
+			<onback>SetFocus(90004)</onback>
+			<onclick>SetFocus(90004)</onclick>
 			<onfocus>SetFocus(90000)</onfocus>
 		</control>
 		<!-- ready to focus -->
