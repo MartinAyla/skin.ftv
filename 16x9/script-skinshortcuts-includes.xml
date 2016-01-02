@@ -9,9 +9,9 @@
 			<thumb />
 			<property name="labelID">script.globalsearch</property>
 			<property name="defaultID">script.globalsearch</property>
-			<onclick>RunScript(script.globalsearch)</onclick>
-			<property name="path">RunScript(script.globalsearch)</property>
-			<property name="list">RunScript(script.globalsearch)</property>
+			<onclick>RunAddOn(script.globalsearch)</onclick>
+			<property name="path">RunAddOn(script.globalsearch)</property>
+			<property name="list">RunAddOn(script.globalsearch)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">script-globalsearch</property>
 			<property name="group">mainmenu</property>

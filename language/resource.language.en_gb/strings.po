@@ -49,7 +49,7 @@ msgid "Apps"
 msgstr ""
 
 msgctxt "#31102"
-msgid ""
+msgid "Text Search"
 msgstr ""
 
 msgctxt "#31103"
@@ -602,15 +602,15 @@ msgid "Download Subtitles"
 msgstr ""
 
 msgctxt "#31141"
-msgid ""
+msgid "[LIGHT]Press[/LIGHT] [B]UP[/B] [LIGHT]to cancel.[/LIGHT]"
 msgstr ""
 
 msgctxt "#31142"
-msgid ""
+msgid "Enable Fire TV style search"
 msgstr ""
 
 msgctxt "#31143"
-msgid ""
+msgid "Please note: Can only be used correctly with English ABC keyboard layout"
 msgstr ""
 
 msgctxt "#31144"

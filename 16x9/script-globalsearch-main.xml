@@ -215,6 +215,7 @@
 						<orientation>horizontal</orientation>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include>VisibleDelayFadeAnimation</include>
+						<visible>!Control.IsVisible(199)</visible>
 						<control type="label">
 							<width>auto</width>
 							<height>60</height>
@@ -225,6 +226,7 @@
 						</control>
 					</control>
 					<control type="group">
+						<visible>!Control.IsVisible(199)</visible>
 						<!-- Categories -->
 						<control type="grouplist">
 							<left>196</left>

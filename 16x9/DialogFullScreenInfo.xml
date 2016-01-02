@@ -69,8 +69,8 @@
 				<width>321</width>
 				<height>341</height>
 				<texture>osd/Pause.png</texture>
-				<visible>Player.Paused</visible>
-				<animation type="Conditional" condition="System.IdleTime(2) + !Player.Caching" reversible="true">
+				<visible>Player.Paused + !Player.Caching</visible>
+				<animation type="Conditional" condition="System.IdleTime(2)" reversible="true">
 					<effect type="fade" start="100" end="0" time="200" />
 				</animation>
 			</control>

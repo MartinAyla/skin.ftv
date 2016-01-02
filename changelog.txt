@@ -1,3 +1,19 @@
+2.3.8
+
+Fix search list problem
+
+2.3.7
+
+Clean up keyboard code
+
+2.3.6
+
+Added Fire TV style search
+
+2.3.5
+
+Buffering 2nd attempt
+
 2.3.4
 
 Added busy icon when buffering
