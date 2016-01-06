@@ -610,11 +610,11 @@ msgid "Enable Fire TV style search"
 msgstr ""
 
 msgctxt "#31143"
-msgid "Please note: Can only be used correctly with English ABC keyboard layout"
+msgid "Please note: Can only be used with English keyboard layouts"
 msgstr ""
 
 msgctxt "#31144"
-msgid ""
+msgid "Not set!"
 msgstr ""
 
 msgctxt "#31145"
@@ -935,4 +935,16 @@ msgstr ""
 
 msgctxt "#31224"
 msgid "Picture Add-ons"
+msgstr ""
+
+msgctxt "#31225"
+msgid "Set keyboard layout"
+msgstr ""
+
+msgctxt "#31226"
+msgid "Select the keyboard layout used in Kodi"
+msgstr ""
+
+msgctxt "#31227"
+msgid "Air time"
 msgstr ""

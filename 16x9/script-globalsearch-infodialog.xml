@@ -448,14 +448,14 @@
 				<top>409</top>
 				<width>1620</width>
 				<height>116</height>
-				<itemgap>10</itemgap>
+				<itemgap>0</itemgap>
 				<onleft>Back</onleft>
 				<onright>noop</onright>
 				<orientation>horizontal</orientation>
 				<include>DialogVideoInfoAnimation</include>
 				<defaultcontrol always="true">191</defaultcontrol>
 				<control id="191" type="button">
-					<width min="104" max="204">auto</width>
+					<width min="104" max="224">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
@@ -469,7 +469,7 @@
 					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
 				</control>
 				<control id="192" type="button">
-					<width min="104" max="204">auto</width>
+					<width min="104" max="224">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>
@@ -482,7 +482,7 @@
 					<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
 				</control>
 				<control id="193" type="button">
-					<width min="104" max="204">auto</width>
+					<width min="104" max="224">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>

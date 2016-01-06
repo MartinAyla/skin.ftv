@@ -250,7 +250,7 @@
 						<visible>!Control.HasFocus(21) + !Control.HasFocus(30) + !Control.HasFocus(20)</visible>
 					</control>
 					<control id="21" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>55</onup>
@@ -283,7 +283,7 @@
 						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="20" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>55</onup>
@@ -297,7 +297,7 @@
 						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1003" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>55</onup>

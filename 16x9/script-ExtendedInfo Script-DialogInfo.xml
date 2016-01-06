@@ -2,7 +2,6 @@
 <window>
 	<!-- script-ExtendedInfo Script-DialogInfo.xml -->
 	<defaultcontrol always="true">7000</defaultcontrol>
-	<zorder>2</zorder>
 	<onunload>ClearProperty(StarredInTV,home)</onunload>
 	<animation effect="fade" end="100" start="100" time="200">WindowClose</animation>
 	<controls>
@@ -151,7 +150,7 @@
 						<ondown condition="Control.IsVisible(250)">250</ondown>
 						<onleft>7000</onleft>
 						<onright>8</onright>
-						<onclick>RunScript(script.toolbox,info=textviewer,header=,text='"$INFO[Window.Property(Biography)]"')</onclick>
+						<onclick>RunScript(script.toolbox,info=textviewer,header=,text='"$INFO[Window.Property(Biography)])"'</onclick>
 						<visible>Control.IsVisible(96) + !IsEmpty(Window.Property(Biography))</visible>
 						<include>DialogVideoInfoAnimation</include>
 						<texturefocus>views/more_fo.png</texturefocus>

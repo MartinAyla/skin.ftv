@@ -236,7 +236,7 @@
 					</control>
 					<!-- Refresh Button -->
 					<control type="button" id="6">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>116</height>
 						<onup>Close</onup>
@@ -251,7 +251,7 @@
 					</control>
 					<!-- Get Thumb Button -->
 					<control type="button" id="10">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>116</height>
 						<onup>Close</onup>
@@ -266,7 +266,7 @@
 					</control>
 					<!-- Fanart Button -->
 					<control type="button" id="12">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>116</height>
 						<onup>Close</onup>
@@ -281,7 +281,7 @@
 					</control>
 					<!-- User Rating Button -->
 					<control id="7" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>116</height>
 						<onup condition="!Control.IsVisible(96)">Close</onup>

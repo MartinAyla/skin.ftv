@@ -54,6 +54,7 @@
 							<left>45</left>
 							<top>438</top>
 							<content>plugin://script.extendedinfo?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).Index(1)]</content>
+							<!--content>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).Index(1)]</content-->
 							<width>848</width>
 							<height>763</height>
 							<onup>300</onup>
@@ -126,11 +127,11 @@
 					<height>54</height>
 					<font>Reg27</font>
 					<textcolor>ff7f7f7f</textcolor>
-					<label>31141</label>
+					<label>$VAR[SearchKeyboard]</label>
 				</control>
 				<control type="fixedlist" id="999">
 					<top>235</top>
-					<width>938</width>
+					<width>936</width>
 					<height>54</height>
 					<onup>Close</onup>
 					<ondown condition="!IsEmpty(Control.GetLabel(312).Index(1))">300</ondown>
@@ -195,202 +196,9 @@
 							<visible>!Control.HasFocus(999)</visible>
 						</control>
 					</focusedlayout>
-					<content>
-						<item>
-							<!-- A -->
-							<onclick>SendClick(120)</onclick>
-							<label>A</label>
-						</item>
-						<item>
-							<!-- B -->
-							<onclick>SendClick(121)</onclick>
-							<label>B</label>
-						</item>
-						<item>
-							<!-- C -->
-							<onclick>SendClick(122)</onclick>
-							<label>C</label>
-						</item>
-						<item>
-							<!-- D -->
-							<onclick>SendClick(123)</onclick>
-							<label>D</label>
-						</item>
-						<item>
-							<!-- E -->
-							<onclick>SendClick(124)</onclick>
-							<label>E</label>
-						</item>
-						<item>
-							<!-- F -->
-							<onclick>SendClick(125)</onclick>
-							<label>F</label>
-						</item>
-						<item>
-							<!-- G -->
-							<onclick>SendClick(126)</onclick>
-							<label>G</label>
-						</item>
-						<item>
-							<!-- H -->
-							<onclick>SendClick(127)</onclick>
-							<label>H</label>
-						</item>
-						<item>
-							<!-- I -->
-							<onclick>SendClick(128)</onclick>
-							<label>I</label>
-						</item>
-						<item>
-							<!-- J -->
-							<onclick>SendClick(129)</onclick>
-							<label>J</label>
-						</item>
-						<item>
-							<!-- K -->
-							<onclick>SendClick(140)</onclick>
-							<label>K</label>
-						</item>
-						<item>
-							<!-- L -->
-							<onclick>SendClick(141)</onclick>
-							<label>L</label>
-						</item>
-						<item>
-							<!-- M -->
-							<onclick>SendClick(142)</onclick>
-							<label>M</label>
-						</item>
-						<item>
-							<!-- N -->
-							<onclick>SendClick(143)</onclick>
-							<label>N</label>
-						</item>
-						<item>
-							<!-- O -->
-							<onclick>SendClick(144)</onclick>
-							<label>O</label>
-						</item>
-						<item>
-							<!-- P -->
-							<onclick>SendClick(145)</onclick>
-							<label>P</label>
-						</item>
-						<item>
-							<!-- Q -->
-							<onclick>SendClick(146)</onclick>
-							<label>Q</label>
-						</item>
-						<item>
-							<!-- R -->
-							<onclick>SendClick(147)</onclick>
-							<label>R</label>
-						</item>
-						<item>
-							<!-- S -->
-							<onclick>SendClick(148)</onclick>
-							<label>S</label>
-						</item>
-						<item>
-							<!-- T -->
-							<onclick>SendClick(149)</onclick>
-							<label>T</label>
-						</item>
-						<item>
-							<!-- U -->
-							<onclick>SendClick(160)</onclick>
-							<label>U</label>
-						</item>
-						<item>
-							<!-- V -->
-							<onclick>SendClick(161)</onclick>
-							<label>V</label>
-						</item>
-						<item>
-							<!-- W -->
-							<onclick>SendClick(162)</onclick>
-							<label>W</label>
-						</item>
-						<item>
-							<!-- X -->
-							<onclick>SendClick(163)</onclick>
-							<label>X</label>
-						</item>
-						<item>
-							<!-- Y -->
-							<onclick>SendClick(164)</onclick>
-							<label>Y</label>
-						</item>
-						<item>
-							<!-- Z -->
-							<onclick>SendClick(165)</onclick>
-							<label>Z</label>
-						</item>
-						<item>
-							<!-- 1 -->
-							<onclick>SendClick(101)</onclick>
-							<label>$NUMBER[1]</label>
-						</item>
-						<item>
-							<!-- 2 -->
-							<onclick>SendClick(102)</onclick>
-							<label>$NUMBER[2]</label>
-						</item>
-						<item>
-							<!-- 3 -->
-							<onclick>SendClick(103)</onclick>
-							<label>$NUMBER[3]</label>
-						</item>
-						<item>
-							<!-- 4 -->
-							<onclick>SendClick(104)</onclick>
-							<label>$NUMBER[4]</label>
-						</item>
-						<item>
-							<!-- 5 -->
-							<onclick>SendClick(105)</onclick>
-							<label>$NUMBER[5]</label>
-						</item>
-						<item>
-							<!-- 6 -->
-							<onclick>SendClick(106)</onclick>
-							<label>$NUMBER[6]</label>
-						</item>
-						<item>
-							<!-- 7 -->
-							<onclick>SendClick(107)</onclick>
-							<label>$NUMBER[7]</label>
-						</item>
-						<item>
-							<!-- 8 -->
-							<onclick>SendClick(108)</onclick>
-							<label>$NUMBER[8]</label>
-						</item>
-						<item>
-							<!-- 9 -->
-							<onclick>SendClick(109)</onclick>
-							<label>$NUMBER[9]</label>
-						</item>
-						<item>
-							<!-- 0 -->
-							<onclick>SendClick(100)</onclick>
-							<label>$NUMBER[0]</label>
-						</item>
-						<item>
-							<!-- Backspace -->
-							<onclick>SendClick(8)</onclick>
-							<label>-</label>
-							<icon>dialogs/keyboard_backspace_nf.png</icon>
-							<thumb>dialogs/keyboard_backspace_fo.png</thumb>
-						</item>
-						<item>
-							<!-- Space -->
-							<onclick>SendClick(32)</onclick>
-							<label>-</label>
-							<icon>dialogs/keyboard_space_nf.png</icon>
-							<thumb>dialogs/keyboard_space_fo.png</thumb>
-						</item>
-					</content>
+					<include condition="StringCompare(Skin.String(KeyboardLayout),English QWERTY)">SearchKeyboardQWERTY</include>
+					<include condition="StringCompare(Skin.String(KeyboardLayout),English AZERTY)">SearchKeyboardAZERTY</include>
+					<include condition="StringCompare(Skin.String(KeyboardLayout),English ABC)">SearchKeyboardABC</include>
 				</control>
 				<!-- List mask -->
 				<control type="image">
@@ -403,177 +211,235 @@
 			<!-- Hidden controls -->
 			<control id="100" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(100)</visible>
 			</control>
 			<control id="101" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(101)</visible>
 			</control>
 			<control id="102" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(102)</visible>
 			</control>
 			<control id="103" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(103)</visible>
 			</control>
 			<control id="104" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(104)</visible>
 			</control>
 			<control id="105" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(105)</visible>
 			</control>
 			<control id="106" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(106)</visible>
 			</control>
 			<control id="107" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(107)</visible>
 			</control>
 			<control id="108" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(108)</visible>
 			</control>
 			<control id="109" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(109)</visible>
 			</control>
 			<control id="110" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(110)</visible>
 			</control>
 			<control id="111" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(111)</visible>
 			</control>
 			<control id="120" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(120)</visible>
 			</control>
 			<control id="121" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(121)</visible>
 			</control>
 			<control id="122" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(122)</visible>
 			</control>
 			<control id="123" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(123)</visible>
 			</control>
 			<control id="124" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(124)</visible>
 			</control>
 			<control id="125" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(125)</visible>
 			</control>
 			<control id="126" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(126)</visible>
 			</control>
 			<control id="127" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(127)</visible>
 			</control>
 			<control id="128" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(128)</visible>
 			</control>
 			<control id="129" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(129)</visible>
 			</control>
 			<control id="130" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(130)</visible>
 			</control>
 			<control id="131" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(131)</visible>
 			</control>
 			<control id="140" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(140)</visible>
 			</control>
 			<control id="141" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(141)</visible>
 			</control>
 			<control id="142" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(142)</visible>
 			</control>
 			<control id="143" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(143)</visible>
 			</control>
 			<control id="144" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(144)</visible>
 			</control>
 			<control id="145" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(145)</visible>
 			</control>
 			<control id="146" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(146)</visible>
 			</control>
 			<control id="147" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(147)</visible>
 			</control>
 			<control id="148" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(148)</visible>
 			</control>
 			<control id="149" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(149)</visible>
 			</control>
 			<control id="150" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(150)</visible>
 			</control>
 			<control id="151" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(151)</visible>
 			</control>
 			<control id="160" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(160)</visible>
 			</control>
 			<control id="161" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(161)</visible>
 			</control>
 			<control id="162" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(162)</visible>
 			</control>
 			<control id="163" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(163)</visible>
 			</control>
 			<control id="164" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(164)</visible>
 			</control>
 			<control id="165" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(165)</visible>
 			</control>
 			<control id="166" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(166)</visible>
 			</control>
 			<control id="167" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(167)</visible>
 			</control>
 			<control id="168" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(168)</visible>
 			</control>
 			<control id="169" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(169)</visible>
 			</control>
 			<control id="170" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(170)</visible>
 			</control>
 			<control id="171" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(171)</visible>
 			</control>
 			<control id="32" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(32)</visible>
 			</control>
 			<control id="8" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(8)</visible>
 			</control>
 			<control id="305" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(305)</visible>
 			</control>
 			<control id="306" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(306)</visible>
 			</control>
 			<control id="302" type="radiobutton">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(302)</visible>
 			</control>
 			<control id="303" type="radiobutton">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(303)</visible>
 			</control>
 			<control id="304" type="radiobutton">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(304)</visible>
 			</control>
 			<control id="307" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(307)</visible>
 			</control>
 			<control id="309" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(309)</visible>
 			</control>
 			<control id="301" type="button">
 				<include>HiddenControl</include>
+				<visible>Control.IsEnabled(301)</visible>
 			</control>
 		</controls>
 	</include>
@@ -1140,5 +1006,681 @@
 				</control>
 			</control>
 		</controls>
+	</include>
+	<include name="SearchKeyboardQWERTY">
+		<content>
+			<item>
+				<!-- A -->
+				<onclick>SendClick(140)</onclick>
+				<label>A</label>
+				<visible>Control.IsVisible(140)</visible>
+			</item>
+			<item>
+				<!-- B -->
+				<onclick>SendClick(164)</onclick>
+				<label>B</label>
+				<visible>Control.IsVisible(164)</visible>
+			</item>
+			<item>
+				<!-- C -->
+				<onclick>SendClick(162)</onclick>
+				<label>C</label>
+				<visible>Control.IsVisible(162)</visible>
+			</item>
+			<item>
+				<!-- D -->
+				<onclick>SendClick(142)</onclick>
+				<label>D</label>
+				<visible>Control.IsVisible(142)</visible>
+			</item>
+			<item>
+				<!-- E -->
+				<onclick>SendClick(122)</onclick>
+				<label>E</label>
+				<visible>Control.IsVisible(122)</visible>
+			</item>
+			<item>
+				<!-- F -->
+				<onclick>SendClick(143)</onclick>
+				<label>F</label>
+				<visible>Control.IsVisible(143)</visible>
+			</item>
+			<item>
+				<!-- G -->
+				<onclick>SendClick(144)</onclick>
+				<label>G</label>
+				<visible>Control.IsVisible(144)</visible>
+			</item>
+			<item>
+				<!-- H -->
+				<onclick>SendClick(145)</onclick>
+				<label>H</label>
+				<visible>Control.IsVisible(145)</visible>
+			</item>
+			<item>
+				<!-- I -->
+				<onclick>SendClick(127)</onclick>
+				<label>I</label>
+				<visible>Control.IsVisible(127)</visible>
+			</item>
+			<item>
+				<!-- J -->
+				<onclick>SendClick(146)</onclick>
+				<label>J</label>
+				<visible>Control.IsVisible(129)</visible>
+			</item>
+			<item>
+				<!-- K -->
+				<onclick>SendClick(147)</onclick>
+				<label>K</label>
+				<visible>Control.IsVisible(140)</visible>
+			</item>
+			<item>
+				<!-- L -->
+				<onclick>SendClick(148)</onclick>
+				<label>L</label>
+				<visible>Control.IsVisible(141)</visible>
+			</item>
+			<item>
+				<!-- M -->
+				<onclick>SendClick(166)</onclick>
+				<label>M</label>
+				<visible>Control.IsVisible(166)</visible>
+			</item>
+			<item>
+				<!-- N -->
+				<onclick>SendClick(165)</onclick>
+				<label>N</label>
+				<visible>Control.IsVisible(165)</visible>
+			</item>
+			<item>
+				<!-- O -->
+				<onclick>SendClick(128)</onclick>
+				<label>O</label>
+				<visible>Control.IsVisible(128)</visible>
+			</item>
+			<item>
+				<!-- P -->
+				<onclick>SendClick(129)</onclick>
+				<label>P</label>
+				<visible>Control.IsVisible(129)</visible>
+			</item>
+			<item>
+				<!-- Q -->
+				<onclick>SendClick(120)</onclick>
+				<label>Q</label>
+				<visible>Control.IsVisible(146)</visible>
+			</item>
+			<item>
+				<!-- R -->
+				<onclick>SendClick(123)</onclick>
+				<label>R</label>
+				<visible>Control.IsVisible(123)</visible>
+			</item>
+			<item>
+				<!-- S -->
+				<onclick>SendClick(141)</onclick>
+				<label>S</label>
+				<visible>Control.IsVisible(141)</visible>
+			</item>
+			<item>
+				<!-- T -->
+				<onclick>SendClick(124)</onclick>
+				<label>T</label>
+				<visible>Control.IsVisible(124)</visible>
+			</item>
+			<item>
+				<!-- U -->
+				<onclick>SendClick(126)</onclick>
+				<label>U</label>
+				<visible>Control.IsVisible(126)</visible>
+			</item>
+			<item>
+				<!-- V -->
+				<onclick>SendClick(163)</onclick>
+				<label>V</label>
+				<visible>Control.IsVisible(163)</visible>
+			</item>
+			<item>
+				<!-- W -->
+				<onclick>SendClick(121)</onclick>
+				<label>W</label>
+				<visible>Control.IsVisible(121)</visible>
+			</item>
+			<item>
+				<!-- X -->
+				<onclick>SendClick(161)</onclick>
+				<label>X</label>
+				<visible>Control.IsVisible(163)</visible>
+			</item>
+			<item>
+				<!-- Y -->
+				<onclick>SendClick(125)</onclick>
+				<label>Y</label>
+				<visible>Control.IsVisible(128)</visible>
+			</item>
+			<item>
+				<!-- Z -->
+				<onclick>SendClick(160)</onclick>
+				<label>Z</label>
+				<visible>Control.IsVisible(160)</visible>
+			</item>
+			<item>
+				<!-- 1 -->
+				<onclick>SendClick(100)</onclick>
+				<label>$NUMBER[1]</label>
+				<visible>Control.IsVisible(100)</visible>
+			</item>
+			<item>
+				<!-- 2 -->
+				<onclick>SendClick(101)</onclick>
+				<label>$NUMBER[2]</label>
+				<visible>Control.IsVisible(101)</visible>
+			</item>
+			<item>
+				<!-- 3 -->
+				<onclick>SendClick(102)</onclick>
+				<label>$NUMBER[3]</label>
+				<visible>Control.IsVisible(102)</visible>
+			</item>
+			<item>
+				<!-- 4 -->
+				<onclick>SendClick(103)</onclick>
+				<label>$NUMBER[4]</label>
+				<visible>Control.IsVisible(103)</visible>
+			</item>
+			<item>
+				<!-- 5 -->
+				<onclick>SendClick(104)</onclick>
+				<label>$NUMBER[5]</label>
+				<visible>Control.IsVisible(104)</visible>
+			</item>
+			<item>
+				<!-- 6 -->
+				<onclick>SendClick(105)</onclick>
+				<label>$NUMBER[6]</label>
+				<visible>Control.IsVisible(105)</visible>
+			</item>
+			<item>
+				<!-- 7 -->
+				<onclick>SendClick(106)</onclick>
+				<label>$NUMBER[7]</label>
+				<visible>Control.IsVisible(106)</visible>
+			</item>
+			<item>
+				<!-- 8 -->
+				<onclick>SendClick(107)</onclick>
+				<label>$NUMBER[8]</label>
+				<visible>Control.IsVisible(107)</visible>
+			</item>
+			<item>
+				<!-- 9 -->
+				<onclick>SendClick(108)</onclick>
+				<label>$NUMBER[9]</label>
+				<visible>Control.IsVisible(108)</visible>
+			</item>
+			<item>
+				<!-- 0 -->
+				<onclick>SendClick(109)</onclick>
+				<label>$NUMBER[0]</label>
+				<visible>Control.IsVisible(109)</visible>
+			</item>
+		</content>
+	</include>
+	<include name="SearchKeyboardAZERTY">
+		<content>
+			<item>
+				<!-- A -->
+				<onclick>SendClick(120)</onclick>
+				<label>A</label>
+				<visible>Control.IsVisible(120)</visible>
+			</item>
+			<item>
+				<!-- B -->
+				<onclick>SendClick(164)</onclick>
+				<label>B</label>
+				<visible>Control.IsVisible(164)</visible>
+			</item>
+			<item>
+				<!-- C -->
+				<onclick>SendClick(162)</onclick>
+				<label>C</label>
+				<visible>Control.IsVisible(162)</visible>
+			</item>
+			<item>
+				<!-- D -->
+				<onclick>SendClick(142)</onclick>
+				<label>D</label>
+				<visible>Control.IsVisible(142)</visible>
+			</item>
+			<item>
+				<!-- E -->
+				<onclick>SendClick(122)</onclick>
+				<label>E</label>
+				<visible>Control.IsVisible(122)</visible>
+			</item>
+			<item>
+				<!-- F -->
+				<onclick>SendClick(143)</onclick>
+				<label>F</label>
+				<visible>Control.IsVisible(143)</visible>
+			</item>
+			<item>
+				<!-- G -->
+				<onclick>SendClick(144)</onclick>
+				<label>G</label>
+				<visible>Control.IsVisible(144)</visible>
+			</item>
+			<item>
+				<!-- H -->
+				<onclick>SendClick(145)</onclick>
+				<label>H</label>
+				<visible>Control.IsVisible(145)</visible>
+			</item>
+			<item>
+				<!-- I -->
+				<onclick>SendClick(127)</onclick>
+				<label>I</label>
+				<visible>Control.IsVisible(127)</visible>
+			</item>
+			<item>
+				<!-- J -->
+				<onclick>SendClick(146)</onclick>
+				<label>J</label>
+				<visible>Control.IsVisible(129)</visible>
+			</item>
+			<item>
+				<!-- K -->
+				<onclick>SendClick(147)</onclick>
+				<label>K</label>
+				<visible>Control.IsVisible(140)</visible>
+			</item>
+			<item>
+				<!-- L -->
+				<onclick>SendClick(148)</onclick>
+				<label>L</label>
+				<visible>Control.IsVisible(141)</visible>
+			</item>
+			<item>
+				<!-- M -->
+				<onclick>SendClick(149)</onclick>
+				<label>M</label>
+				<visible>Control.IsVisible(149)</visible>
+			</item>
+			<item>
+				<!-- N -->
+				<onclick>SendClick(165)</onclick>
+				<label>N</label>
+				<visible>Control.IsVisible(165)</visible>
+			</item>
+			<item>
+				<!-- O -->
+				<onclick>SendClick(128)</onclick>
+				<label>O</label>
+				<visible>Control.IsVisible(128)</visible>
+			</item>
+			<item>
+				<!-- P -->
+				<onclick>SendClick(129)</onclick>
+				<label>P</label>
+				<visible>Control.IsVisible(129)</visible>
+			</item>
+			<item>
+				<!-- Q -->
+				<onclick>SendClick(140)</onclick>
+				<label>Q</label>
+				<visible>Control.IsVisible(140)</visible>
+			</item>
+			<item>
+				<!-- R -->
+				<onclick>SendClick(123)</onclick>
+				<label>R</label>
+				<visible>Control.IsVisible(123)</visible>
+			</item>
+			<item>
+				<!-- S -->
+				<onclick>SendClick(141)</onclick>
+				<label>S</label>
+				<visible>Control.IsVisible(141)</visible>
+			</item>
+			<item>
+				<!-- T -->
+				<onclick>SendClick(124)</onclick>
+				<label>T</label>
+				<visible>Control.IsVisible(124)</visible>
+			</item>
+			<item>
+				<!-- U -->
+				<onclick>SendClick(126)</onclick>
+				<label>U</label>
+				<visible>Control.IsVisible(126)</visible>
+			</item>
+			<item>
+				<!-- V -->
+				<onclick>SendClick(163)</onclick>
+				<label>V</label>
+				<visible>Control.IsVisible(163)</visible>
+			</item>
+			<item>
+				<!-- W -->
+				<onclick>SendClick(160)</onclick>
+				<label>W</label>
+				<visible>Control.IsVisible(160)</visible>
+			</item>
+			<item>
+				<!-- X -->
+				<onclick>SendClick(161)</onclick>
+				<label>X</label>
+				<visible>Control.IsVisible(163)</visible>
+			</item>
+			<item>
+				<!-- Y -->
+				<onclick>SendClick(125)</onclick>
+				<label>Y</label>
+				<visible>Control.IsVisible(128)</visible>
+			</item>
+			<item>
+				<!-- Z -->
+				<onclick>SendClick(121)</onclick>
+				<label>Z</label>
+				<visible>Control.IsVisible(121)</visible>
+			</item>
+			<item>
+				<!-- 1 -->
+				<onclick>SendClick(100)</onclick>
+				<label>$NUMBER[1]</label>
+				<visible>Control.IsVisible(100)</visible>
+			</item>
+			<item>
+				<!-- 2 -->
+				<onclick>SendClick(101)</onclick>
+				<label>$NUMBER[2]</label>
+				<visible>Control.IsVisible(101)</visible>
+			</item>
+			<item>
+				<!-- 3 -->
+				<onclick>SendClick(102)</onclick>
+				<label>$NUMBER[3]</label>
+				<visible>Control.IsVisible(102)</visible>
+			</item>
+			<item>
+				<!-- 4 -->
+				<onclick>SendClick(103)</onclick>
+				<label>$NUMBER[4]</label>
+				<visible>Control.IsVisible(103)</visible>
+			</item>
+			<item>
+				<!-- 5 -->
+				<onclick>SendClick(104)</onclick>
+				<label>$NUMBER[5]</label>
+				<visible>Control.IsVisible(104)</visible>
+			</item>
+			<item>
+				<!-- 6 -->
+				<onclick>SendClick(105)</onclick>
+				<label>$NUMBER[6]</label>
+				<visible>Control.IsVisible(105)</visible>
+			</item>
+			<item>
+				<!-- 7 -->
+				<onclick>SendClick(106)</onclick>
+				<label>$NUMBER[7]</label>
+				<visible>Control.IsVisible(106)</visible>
+			</item>
+			<item>
+				<!-- 8 -->
+				<onclick>SendClick(107)</onclick>
+				<label>$NUMBER[8]</label>
+				<visible>Control.IsVisible(107)</visible>
+			</item>
+			<item>
+				<!-- 9 -->
+				<onclick>SendClick(108)</onclick>
+				<label>$NUMBER[9]</label>
+				<visible>Control.IsVisible(108)</visible>
+			</item>
+			<item>
+				<!-- 0 -->
+				<onclick>SendClick(109)</onclick>
+				<label>$NUMBER[0]</label>
+				<visible>Control.IsVisible(109)</visible>
+			</item>
+		</content>
+	</include>
+	<include name="SearchKeyboardABC">
+		<content>
+			<item>
+				<!-- A -->
+				<onclick>SendClick(120)</onclick>
+				<label>A</label>
+				<visible>Control.IsVisible(120)</visible>
+			</item>
+			<item>
+				<!-- B -->
+				<onclick>SendClick(121)</onclick>
+				<label>B</label>
+				<visible>Control.IsVisible(121)</visible>
+			</item>
+			<item>
+				<!-- C -->
+				<onclick>SendClick(122)</onclick>
+				<label>C</label>
+				<visible>Control.IsVisible(122)</visible>
+			</item>
+			<item>
+				<!-- D -->
+				<onclick>SendClick(123)</onclick>
+				<label>D</label>
+				<visible>Control.IsVisible(123)</visible>
+			</item>
+			<item>
+				<!-- E -->
+				<onclick>SendClick(124)</onclick>
+				<label>E</label>
+				<visible>Control.IsVisible(124)</visible>
+			</item>
+			<item>
+				<!-- F -->
+				<onclick>SendClick(125)</onclick>
+				<label>F</label>
+				<visible>Control.IsVisible(125)</visible>
+			</item>
+			<item>
+				<!-- G -->
+				<onclick>SendClick(126)</onclick>
+				<label>G</label>
+				<visible>Control.IsVisible(126)</visible>
+			</item>
+			<item>
+				<!-- H -->
+				<onclick>SendClick(127)</onclick>
+				<label>H</label>
+				<visible>Control.IsVisible(127)</visible>
+			</item>
+			<item>
+				<!-- I -->
+				<onclick>SendClick(128)</onclick>
+				<label>I</label>
+				<visible>Control.IsVisible(128)</visible>
+			</item>
+			<item>
+				<!-- J -->
+				<onclick>SendClick(129)</onclick>
+				<label>J</label>
+				<visible>Control.IsVisible(129)</visible>
+			</item>
+			<item>
+				<!-- K -->
+				<onclick>SendClick(140)</onclick>
+				<label>K</label>
+				<visible>Control.IsVisible(140)</visible>
+			</item>
+			<item>
+				<!-- L -->
+				<onclick>SendClick(141)</onclick>
+				<label>L</label>
+				<visible>Control.IsVisible(141)</visible>
+			</item>
+			<item>
+				<!-- M -->
+				<onclick>SendClick(142)</onclick>
+				<label>M</label>
+				<visible>Control.IsVisible(142)</visible>
+			</item>
+			<item>
+				<!-- N -->
+				<onclick>SendClick(143)</onclick>
+				<label>N</label>
+				<visible>Control.IsVisible(143)</visible>
+			</item>
+			<item>
+				<!-- O -->
+				<onclick>SendClick(144)</onclick>
+				<label>O</label>
+				<visible>Control.IsVisible(144)</visible>
+			</item>
+			<item>
+				<!-- P -->
+				<onclick>SendClick(145)</onclick>
+				<label>P</label>
+				<visible>Control.IsVisible(145)</visible>
+			</item>
+			<item>
+				<!-- Q -->
+				<onclick>SendClick(146)</onclick>
+				<label>Q</label>
+				<visible>Control.IsVisible(146)</visible>
+			</item>
+			<item>
+				<!-- R -->
+				<onclick>SendClick(147)</onclick>
+				<label>R</label>
+				<visible>Control.IsVisible(147)</visible>
+			</item>
+			<item>
+				<!-- S -->
+				<onclick>SendClick(148)</onclick>
+				<label>S</label>
+				<visible>Control.IsVisible(148)</visible>
+			</item>
+			<item>
+				<!-- T -->
+				<onclick>SendClick(149)</onclick>
+				<label>T</label>
+				<visible>Control.IsVisible(149)</visible>
+			</item>
+			<item>
+				<!-- U -->
+				<onclick>SendClick(160)</onclick>
+				<label>U</label>
+				<visible>Control.IsVisible(160)</visible>
+			</item>
+			<item>
+				<!-- V -->
+				<onclick>SendClick(161)</onclick>
+				<label>V</label>
+				<visible>Control.IsVisible(161)</visible>
+			</item>
+			<item>
+				<!-- W -->
+				<onclick>SendClick(162)</onclick>
+				<label>W</label>
+				<visible>Control.IsVisible(162)</visible>
+			</item>
+			<item>
+				<!-- X -->
+				<onclick>SendClick(163)</onclick>
+				<label>X</label>
+				<visible>Control.IsVisible(163)</visible>
+			</item>
+			<item>
+				<!-- Y -->
+				<onclick>SendClick(164)</onclick>
+				<label>Y</label>
+				<visible>Control.IsVisible(164)</visible>
+			</item>
+			<item>
+				<!-- Z -->
+				<onclick>SendClick(165)</onclick>
+				<label>Z</label>
+				<visible>Control.IsVisible(165)</visible>
+			</item>
+			<item>
+				<!-- 1 -->
+				<onclick>SendClick(101)</onclick>
+				<label>$NUMBER[1]</label>
+				<visible>Control.IsVisible(101)</visible>
+			</item>
+			<item>
+				<!-- 2 -->
+				<onclick>SendClick(102)</onclick>
+				<label>$NUMBER[2]</label>
+				<visible>Control.IsVisible(102)</visible>
+			</item>
+			<item>
+				<!-- 3 -->
+				<onclick>SendClick(103)</onclick>
+				<label>$NUMBER[3]</label>
+				<visible>Control.IsVisible(103)</visible>
+			</item>
+			<item>
+				<!-- 4 -->
+				<onclick>SendClick(104)</onclick>
+				<label>$NUMBER[4]</label>
+				<visible>Control.IsVisible(104)</visible>
+			</item>
+			<item>
+				<!-- 5 -->
+				<onclick>SendClick(105)</onclick>
+				<label>$NUMBER[5]</label>
+				<visible>Control.IsVisible(105)</visible>
+			</item>
+			<item>
+				<!-- 6 -->
+				<onclick>SendClick(106)</onclick>
+				<label>$NUMBER[6]</label>
+				<visible>Control.IsVisible(106)</visible>
+			</item>
+			<item>
+				<!-- 7 -->
+				<onclick>SendClick(107)</onclick>
+				<label>$NUMBER[7]</label>
+				<visible>Control.IsVisible(107)</visible>
+			</item>
+			<item>
+				<!-- 8 -->
+				<onclick>SendClick(108)</onclick>
+				<label>$NUMBER[8]</label>
+				<visible>Control.IsVisible(108)</visible>
+			</item>
+			<item>
+				<!-- 9 -->
+				<onclick>SendClick(109)</onclick>
+				<label>$NUMBER[9]</label>
+				<visible>Control.IsVisible(109)</visible>
+			</item>
+			<item>
+				<!-- 0 -->
+				<onclick>SendClick(100)</onclick>
+				<label>$NUMBER[0]</label>
+				<visible>Control.IsVisible(100)</visible>
+			</item>
+			<item>
+				<!-- Backspace -->
+				<onclick>SendClick(8)</onclick>
+				<label>-</label>
+				<icon>dialogs/keyboard_backspace_nf.png</icon>
+				<thumb>dialogs/keyboard_backspace_fo.png</thumb>
+				<visible>Control.IsVisible(8)</visible>
+			</item>
+			<item>
+				<!-- Space -->
+				<onclick>SendClick(32)</onclick>
+				<label>-</label>
+				<icon>dialogs/keyboard_space_nf.png</icon>
+				<thumb>dialogs/keyboard_space_fo.png</thumb>
+				<visible>Control.IsVisible(32)</visible>
+			</item>
+		</content>
 	</include>
 </includes>

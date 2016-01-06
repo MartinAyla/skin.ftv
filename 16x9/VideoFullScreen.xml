@@ -744,7 +744,7 @@
 			</animation>
 		</control>
 		<control type="group" id="99">
-			<visible>Player.Paused + !Player.Caching</visible>
+			<visible>Player.Caching</visible>
 			<!-- Busy -->
 			<control type="image" id="99">
 				<centerleft>50%</centerleft>

@@ -301,7 +301,29 @@
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>Skin.ToggleSetting(fTVSearch)</onclick>
 					<onclick condition="!System.HasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onclick>
+					<!--onclick condition="!System.HasAddon(plugin.program.autocompletion)">InstallAddon(plugin.program.autocompletion)</onclick-->
 					<selected>Skin.HasSetting(fTVSearch)</selected>
+				</control>
+				<control id="20" type="button">
+					<width>958</width>
+					<height>84</height>
+					<font>Light32</font>
+					<label> - $LOCALIZE[31225]</label>
+					<label2>$VAR[KeyboardLayout]</label2>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					<onclick>SetProperty(Dialog.NumItems,3)</onclick>
+					<onclick>SetProperty(Dialog.1.Label,English QWERTY)</onclick>
+					<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString(KeyboardLayout,English QWERTY))</onclick>
+					<onclick>SetProperty(Dialog.2.Label,English AZERTY)</onclick>
+					<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString(KeyboardLayout,English AZERTY))</onclick>
+					<onclick>SetProperty(Dialog.3.Label,English ABC)</onclick>
+					<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString(KeyboardLayout,English ABC))</onclick>
+					<onclick>RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[31225])</onclick>
+					<visible>Skin.HasSetting(fTVSearch)</visible>
 				</control>
 				<control id="12" type="radiobutton">
 					<width>958</width>
@@ -416,13 +438,13 @@
 					<texturefocus border="3">settings/button_focus.png</texturefocus>
 					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
 					<onclick>SetProperty(Dialog.NumItems,3)</onclick>
-					<onclick>SetProperty(Dialog.1.Label,Default - US)</onclick>
+					<onclick>SetProperty(Dialog.1.Label,US)</onclick>
 					<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString(RatingCountry,US))</onclick>
 					<onclick>SetProperty(Dialog.2.Label,UK)</onclick>
 					<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString(RatingCountry,UK))</onclick>
 					<onclick>SetProperty(Dialog.3.Label,Germany)</onclick>
 					<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString(RatingCountry,Germany))</onclick>
-					<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Rating Country)</onclick>
+					<onclick>RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[31135])</onclick>
 				</control>
 				<control id="18" type="radiobutton">
 					<width>958</width>

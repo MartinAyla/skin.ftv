@@ -49,7 +49,7 @@
 				<top>292</top>
 				<width>1000</width>
 				<height>900</height>
-				<onup>noop</onup>
+				<onup>back</onup>
 				<ondown>noop</ondown>
 				<onleft>2001</onleft>
 				<onright>noop</onright>
@@ -204,6 +204,7 @@
 						<ondown>2005</ondown>
 						<onclick>ReplaceWindow(MusicFiles)</onclick>
 						<font>Med24</font>
+						<wrapmultiline>true</wrapmultiline>
 						<label>$LOCALIZE[31087]</label>
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
@@ -222,6 +223,7 @@
 						<ondown>3000</ondown>
 						<onclick>SetFocus(5001)</onclick>
 						<font>Med24</font>
+						<wrapmultiline>true</wrapmultiline>
 						<label>$LOCALIZE[31089]</label>
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
@@ -239,6 +241,7 @@
 						<ondown>noop</ondown>
 						<onclick condition="!StringCompare(Playlist.Length(music),0)">ActivateWindow(musicplaylist)</onclick>
 						<font>Med24</font>
+						<wrapmultiline>true</wrapmultiline>
 						<label>$LOCALIZE[31088]</label>
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>
@@ -258,6 +261,7 @@
 						<onclick>SetFocus(50)</onclick>
 						<font>Med24</font>
 						<label>$LOCALIZE[31090]</label>
+						<wrapmultiline>true</wrapmultiline>
 						<altlabel>$LOCALIZE[31091]</altlabel>
 						<textoffsetx>28</textoffsetx>
 						<textcolor>ffdadada</textcolor>

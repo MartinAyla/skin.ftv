@@ -1,3 +1,30 @@
+2.4.2
+
+Added close to Next Aired
+Added forced view types (thanks to sualfred)
+Added Favourites and Weather as separate widgets (thanks to sualfred)
+
+2.4.1
+
+Added 'Next Aired' script
+Fixed shutdown menu alignment (thanks to sualfred)
+Parameterised home.xml
+Revert Extended Info biography problem fix
+
+2.4.0
+
+Added individual widget view types (thanks to sualfred)
+Increased auto-width buttons' max width
+Cleaned up search layouts
+
+2.3.9
+
+Added QWERTY and AZERTY keyboard layouts to fTV style search
+Fixed focused widget problem (thanks to sualfred)
+Fixed sort order for widgets
+Fixed Extended Info biography problem
+Fixed busy dialog visible when pausing video
+
 2.3.8
 
 Fix search list problem

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
+	<widget label="1036">favourites</widget>
+	<widget label="10508">weather</widget>
 	<widget label="31210">widget1</widget>
 	<widget label="31211">widget2</widget>
 	<widget label="31212">widget3</widget>
@@ -8,6 +10,8 @@
 	<widget label="31215">widget6</widget>
 	<widget label="31216">widget7</widget>
 	<widget label="31217">widget8</widget>
+	<widgetdefault defaultID="weather">weather</widgetdefault>
+	<widgetdefault defaultID="favourites">favourites</widgetdefault>
 	<icon labelID="13009">DefaultQuit.png</icon>
 	<icon labelID="20151">DefaultQuit.png</icon>
 	<icon labelID="13011">DefaultSleep.png</icon>
@@ -25,6 +29,7 @@
 	<groupings>
 		<shortcut label="$ADDON[script.skin.helper.service 32062]" type="32010" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>
 		<node label="fTV">
+			<shortcut label="10134" icon="ftv_icon.png">ActivateWindow(Favourites,favourites://,return)</shortcut>
 			<node label="342">
 				<shortcut label="31167" type="movie" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/RecentlyAddedMovies.xsp,return)</shortcut>
 				<shortcut label="31168" type="movie" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/YourMovies.xsp,return)</shortcut>

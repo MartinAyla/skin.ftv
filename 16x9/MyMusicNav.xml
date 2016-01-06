@@ -7,7 +7,8 @@
 	<onload condition="Window.Previous(home) + system.getbool(filelists.showparentdiritems)">Control.Move($VAR[ContainerID],1)</onload>
 	<onunload condition="Window.Next(home)">Control.Move($VAR[ContainerID],$INFO[Container.CurrentItem,-])</onunload>
 	<onunload condition="Window.Next(home) + !system.getbool(filelists.showparentdiritems)">Control.Move($VAR[ContainerID],1)</onunload>
-	<views>54,50,56,55,57</views>
+	<onunload>ClearProperty(Window(Home).Property(ForceViewType))</onunload>
+	<views>61,54,50,56,55,57</views>
 	<controls>
 		<control id="2" type="button">
 			<include>HiddenControl</include>
@@ -19,6 +20,7 @@
 		<!-- Fanart -->
 		<include condition="Skin.HasSetting(EnableFanart)">Fanart</include>
 		<!-- Views -->
+		<include>ForcedViewtype61</include>
 		<include>Viewtype50</include>
 		<include>Viewtype54</include>
 		<include>Viewtype55</include>
@@ -132,7 +134,7 @@
 						<visible>!Control.HasFocus(1002) + !Control.HasFocus(1004) + !Control.HasFocus(1005) + !Control.HasFocus(1006) + !Control.HasFocus(1007) + !Control.HasFocus(20) + !Control.HasFocus(16)</visible>
 					</control>
 					<control id="1002" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>50</onup>
@@ -151,7 +153,7 @@
 						<visible>!StringCompare(ListItem.Label,..) + !Control.IsVisible(54) + [Container.Content(artists) | Container.Content(albums)]</visible>
 					</control>
 					<control id="1005" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>50</onup>
@@ -167,7 +169,7 @@
 						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1006" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>50</onup>
@@ -182,7 +184,7 @@
 						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="1007" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>50</onup>
@@ -198,7 +200,7 @@
 						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="16" type="button">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>50</onup>
@@ -213,7 +215,7 @@
 						<texturenofocus border="13,3,6,6">views/button_nf.png</texturenofocus>
 					</control>
 					<control id="20" type="togglebutton">
-						<width min="104" max="204">auto</width>
+						<width min="104" max="224">auto</width>
 						<wrapmultiline>true</wrapmultiline>
 						<height>100</height>
 						<onup>50</onup>

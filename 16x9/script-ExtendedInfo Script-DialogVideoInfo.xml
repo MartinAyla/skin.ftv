@@ -2,7 +2,6 @@
 <window>
 	<!-- script-ExtendedInfo Script-DialogVideoInfo -->
 	<defaultcontrol always="true">999</defaultcontrol>
-	<zorder>2</zorder>
 	<onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
 	<onunload>ClearProperty(ExActor1,home)</onunload>
 	<onunload>ClearProperty(ExActor2,home)</onunload>
@@ -332,7 +331,7 @@
 				</control>
 				<!-- Play/Browse Button -->
 				<control id="8" type="button">
-					<width min="104" max="204">auto</width>
+					<width min="104" max="224">auto</width>
 					<wrapmultiline>true</wrapmultiline>
 					<height>116</height>
 					<onup condition="!Control.IsVisible(96)">Close</onup>

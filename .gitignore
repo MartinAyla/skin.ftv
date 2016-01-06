@@ -1,6 +1,9 @@
 # Image folder
 AFTV/
 
+#Backup file
+*.bak
+
 # Folder config file
 Desktop.ini# Windows image file caches
 Thumbs.db
@@ -49,5 +52,3 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-16x9/DialogVideoInfo_2.xml
-16x9/DialogVideoInfo_3.xml

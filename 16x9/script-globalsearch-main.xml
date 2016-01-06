@@ -232,7 +232,7 @@
 							<left>196</left>
 							<top>212</top>
 							<height>40</height>
-							<itemgap>47</itemgap>
+							<itemgap>14</itemgap>
 							<orientation>horizontal</orientation>
 							<usecontrolcoords>true</usecontrolcoords>
 							<include>VisibleDelayFadeAnimation</include>
@@ -246,14 +246,13 @@
 								<visible>Control.IsVisible(119)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourMovies]</textcolor>
-								<label>$INFO[Container(111).NumItems]</label>
+								<label>$INFO[Container(111).NumItems]    </label>
 								<visible>Control.IsVisible(119)</visible>
 							</control>
 							<control type="label">
@@ -266,14 +265,13 @@
 								<visible>Control.IsVisible(129)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourTVShows]</textcolor>
-								<label>$INFO[Container(121).NumItems]</label>
+								<label>$INFO[Container(121).NumItems]    </label>
 								<visible>Control.IsVisible(129)</visible>
 							</control>
 							<control type="label">
@@ -286,14 +284,13 @@
 								<visible>Control.IsVisible(139)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourSeasons]</textcolor>
-								<label>$INFO[Container(131).NumItems]</label>
+								<label>$INFO[Container(131).NumItems]    </label>
 								<visible>Control.IsVisible(139)</visible>
 							</control>
 							<control type="label">
@@ -306,14 +303,13 @@
 								<visible>Control.IsVisible(149)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourEpisodes]</textcolor>
-								<label>$INFO[Container(141).NumItems]</label>
+								<label>$INFO[Container(141).NumItems]    </label>
 								<visible>Control.IsVisible(149)</visible>
 							</control>
 							<control type="label">
@@ -326,14 +322,13 @@
 								<visible>Control.IsVisible(159)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourMusicVideos]</textcolor>
-								<label>$INFO[Container(151).NumItems]</label>
+								<label>$INFO[Container(151).NumItems]    </label>
 								<visible>Control.IsVisible(159)</visible>
 							</control>
 							<control type="label">
@@ -346,14 +341,13 @@
 								<visible>Control.IsVisible(169)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourArtists]</textcolor>
-								<label>$INFO[Container(161).NumItems]</label>
+								<label>$INFO[Container(161).NumItems]    </label>
 								<visible>Control.IsVisible(169)</visible>
 							</control>
 							<control type="label">
@@ -366,14 +360,13 @@
 								<visible>Control.IsVisible(179)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourAlbums]</textcolor>
-								<label>$INFO[Container(171).NumItems]</label>
+								<label>$INFO[Container(171).NumItems]    </label>
 								<visible>Control.IsVisible(179)</visible>
 							</control>
 							<control type="label">
@@ -386,14 +379,13 @@
 								<visible>Control.IsVisible(189)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourSongs]</textcolor>
-								<label>$INFO[Container(181).NumItems]</label>
+								<label>$INFO[Container(181).NumItems]    </label>
 								<visible>Control.IsVisible(189)</visible>
 							</control>
 							<control type="label">
@@ -406,14 +398,13 @@
 								<visible>Control.IsVisible(219)</visible>
 							</control>
 							<control type="label">
-								<left>-36</left>
 								<top>7</top>
 								<width>auto</width>
 								<height>40</height>
 								<font>Light24</font>
 								<aligny>bottom</aligny>
 								<textcolor>$VAR[CategoryColourActors]</textcolor>
-								<label>$INFO[Container(211).NumItems]</label>
+								<label>$INFO[Container(211).NumItems]    </label>
 								<visible>Control.IsVisible(219)</visible>
 							</control>
 						</control>
@@ -434,7 +425,7 @@
 								<usecontrolcoords>true</usecontrolcoords>
 								<defaultcontrol always="true">1001</defaultcontrol>
 								<control id="1001" type="button">
-									<width min="104" max="204">auto</width>
+									<width min="104" max="224">auto</width>
 									<wrapmultiline>true</wrapmultiline>
 									<height>100</height>
 									<onup>$VAR[SearchSetFocus]</onup>
@@ -521,7 +512,7 @@
 									<width>47</width>
 									<height>23</height>
 									<texture>views/tvdb.png</texture>
-									<visible>[Control.IsVisible(121) + !IsEmpty(Container(121).ListItem.Property(Rating))] | [Control.IsVisible(141) + !IsEmpty(Container(141).ListItem.Property(Rating))]</visible>
+									<visible>Control.IsVisible(121) + !IsEmpty(Container(121).ListItem.Property(Rating))</visible>
 								</control>
 								<control type="label">
 									<top>-8</top>
@@ -1114,7 +1105,7 @@
 								</control>
 								<control type="label">
 									<left>18</left>
-									<top>427</top>
+									<top>448</top>
 									<width>604</width>
 									<height>42</height>
 									<font>Bold44</font>
@@ -1185,19 +1176,6 @@
 								</control>
 								<control type="label">
 									<left>18</left>
-									<top>416</top>
-									<width>604</width>
-									<height>28</height>
-									<font>Med28</font>
-									<textcolor>ffffc448</textcolor>
-									<shadowcolor>88000000</shadowcolor>
-									<label>$LOCALIZE[31060]</label>
-									<visible>!StringCompare(ListItem.Label,..)</visible>
-									<animation condition="Control.HasFocus(141) | Container(141).OnNext | Container(141).OnPrevious" delay="700" easing="inout" effect="fade" end="100" reversible="false" start="0" time="220" tween="sine">Focus</animation>
-									<animation condition="Container(141).OnNext | Container(141).OnPrevious" effect="fade" end="0" start="100" time="0">UnFocus</animation>
-								</control>
-								<control type="label">
-									<left>18</left>
 									<top>448</top>
 									<width>604</width>
 									<height>42</height>
@@ -1205,8 +1183,6 @@
 									<textcolor>ffffffff</textcolor>
 									<shadowcolor>88000000</shadowcolor>
 									<label>$VAR[SearchEpisodeValue]</label>
-									<animation condition="Control.HasFocus(141) | Container(141).OnNext | Container(141).OnPrevious" delay="560" easing="inout" effect="slide" end="0,0" reversible="false" start="0,-21" time="220" tween="sine">Focus</animation>
-									<animation condition="Container(141).OnNext | Container(141).OnPrevious" effect="slide" end="0,-21" start="0,0" time="0">UnFocus</animation>
 								</control>
 								<control type="image">
 									<top>48</top>

@@ -1,5 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="NextAiredNextSeasonNumber">
+		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(NextSeasonNumber),S]</value>
+		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(NextSeasonNumber),S]</value>
+	</variable>
+	<variable name="NextAiredNextEpisodeNumber">
+		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(NextEpisodeNumber),E]</value>
+		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(NextEpisodeNumber),E]</value>
+	</variable>
+	<variable name="NextAiredFanart">
+		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(Fanart)]</value>
+		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(Fanart)]</value>
+	</variable>
+	<variable name="NextAiredShow">
+		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Label]</value>
+		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Label]</value>
+	</variable>
+	<variable name="NextAiredRuntime">
+		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(Runtime)]</value>
+		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(Runtime)]</value>
+	</variable>
+	<variable name="NextAiredNextTitle">
+		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(NextTitle)]</value>
+		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(NextTitle)]</value>
+	</variable>
+	<variable name="NextAiredShortTime">
+		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(ShortTime)]</value>
+		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(ShortTime)]</value>
+	</variable>
+	<variable name="NextAiredNextDay">
+		<value condition="Container(999).HasFocus(1200)">$INFO[Container(200).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1201)">$INFO[Container(201).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1202)">$INFO[Container(202).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1203)">$INFO[Container(203).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1204)">$INFO[Container(204).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1205)">$INFO[Container(205).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1206)">$INFO[Container(206).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1207)">$INFO[Container(207).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1208)">$INFO[Container(208).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1209)">$INFO[Container(209).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1210)">$INFO[Container(210).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1211)">$INFO[Container(211).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1212)">$INFO[Container(212).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1213)">$INFO[Container(213).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1214)">$INFO[Container(214).ListItem.Property(NextDay)]</value>
+		<value condition="Container(999).HasFocus(1215)">$INFO[Container(215).ListItem.Property(NextDay)]</value>
+	</variable>
+	<variable name="KeyboardLayout">
+		<value condition="!IsEmpty(Skin.String(KeyboardLayout))">$INFO[Skin.String(KeyboardLayout)]</value>
+		<value>$LOCALIZE[31144]</value>
+	</variable>
+	<variable name="SearchKeyboard">
+		<value condition="StringCompare(Control.GetLabel(309),English ABC) | StringCompare(Control.GetLabel(309),English QWERTY)">$LOCALIZE[31141]</value>
+		<value>$LOCALIZE[31141]</value>
+	</variable>
 	<variable name="SearchEditColor">
 		<value condition="Control.HasFocus(300)">ffffc24b</value>
 		<value>ffdadada</value>
@@ -80,197 +232,261 @@
 		<value condition="Control.HasFocus(211) | StringCompare(Window(home).Property(Category),actors)">ffd7d7d7</value>
 		<value>ff505559</value>
 	</variable>
-	<variable name="SortBy1-1">
+	<variable name="1-orderby-1">
 		<value condition="SubString(Skin.String(1-WidgetList-1),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(1-WidgetList-1),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy1-1">
+	<variable name="1-orderby-2">
 		<value condition="SubString(Skin.String(1-WidgetList-2),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(1-WidgetList-2),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy1-1">
+	<variable name="1-orderby-3">
 		<value condition="SubString(Skin.String(1-WidgetList-3),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(1-WidgetList-3),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy1-1">
+	<variable name="1-orderby-4">
 		<value condition="SubString(Skin.String(1-WidgetList-4),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(1-WidgetList-4),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy1-1">
+	<variable name="1-orderby-5">
 		<value condition="SubString(Skin.String(1-WidgetList-5),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(1-WidgetList-5),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy1-1">
+	<variable name="1-orderby-6">
 		<value condition="SubString(Skin.String(1-WidgetList-6),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(1-WidgetList-6),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy1-1">
+	<variable name="1-orderby-7">
 		<value condition="SubString(Skin.String(1-WidgetList-7),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(1-WidgetList-7),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy1-1">
+	<variable name="1-orderby-8">
 		<value condition="SubString(Skin.String(1-WidgetList-8),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(1-WidgetList-8),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy2-1">
+	<variable name="2-orderby-1">
 		<value condition="SubString(Skin.String(2-WidgetList-1),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(2-WidgetList-1),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy2-2">
+	<variable name="2-orderby-2">
 		<value condition="SubString(Skin.String(2-WidgetList-2),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(2-WidgetList-2),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy2-3">
+	<variable name="2-orderby-3">
 		<value condition="SubString(Skin.String(2-WidgetList-3),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(2-WidgetList-3),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy2-4">
+	<variable name="2-orderby-4">
 		<value condition="SubString(Skin.String(2-WidgetList-4),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(2-WidgetList-4),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy2-5">
+	<variable name="2-orderby-5">
 		<value condition="SubString(Skin.String(2-WidgetList-5),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(2-WidgetList-5),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy2-6">
+	<variable name="2-orderby-6">
 		<value condition="SubString(Skin.String(2-WidgetList-6),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(2-WidgetList-6),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy2-7">
+	<variable name="2-orderby-7">
 		<value condition="SubString(Skin.String(2-WidgetList-7),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(2-WidgetList-7),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy2-8">
+	<variable name="2-orderby-8">
 		<value condition="SubString(Skin.String(2-WidgetList-8),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(2-WidgetList-8),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy3-1">
+	<variable name="3-orderby-1">
 		<value condition="SubString(Skin.String(3-WidgetList-1),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(3-WidgetList-1),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy3-2">
+	<variable name="3-orderby-2">
 		<value condition="SubString(Skin.String(3-WidgetList-2),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(3-WidgetList-2),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy3-3">
+	<variable name="3-orderby-3">
 		<value condition="SubString(Skin.String(3-WidgetList-3),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(3-WidgetList-3),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy3-4">
+	<variable name="3-orderby-4">
 		<value condition="SubString(Skin.String(3-WidgetList-4),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(3-WidgetList-4),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy3-5">
+	<variable name="3-orderby-5">
 		<value condition="SubString(Skin.String(3-WidgetList-5),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(3-WidgetList-5),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy3-6">
+	<variable name="3-orderby-6">
 		<value condition="SubString(Skin.String(3-WidgetList-6),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(3-WidgetList-6),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy3-7">
+	<variable name="3-orderby-7">
 		<value condition="SubString(Skin.String(3-WidgetList-7),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(3-WidgetList-7),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy3-8">
+	<variable name="3-orderby-8">
 		<value condition="SubString(Skin.String(3-WidgetList-8),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(3-WidgetList-8),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy4-1">
+	<variable name="4-orderby-1">
 		<value condition="SubString(Skin.String(4-WidgetList-1),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(4-WidgetList-1),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy4-2">
+	<variable name="4-orderby-2">
 		<value condition="SubString(Skin.String(4-WidgetList-2),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(4-WidgetList-2),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy4-3">
+	<variable name="4-orderby-3">
 		<value condition="SubString(Skin.String(4-WidgetList-3),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(4-WidgetList-3),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy4-4">
+	<variable name="4-orderby-4">
 		<value condition="SubString(Skin.String(4-WidgetList-4),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(4-WidgetList-4),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy4-5">
+	<variable name="4-orderby-5">
 		<value condition="SubString(Skin.String(4-WidgetList-5),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(4-WidgetList-5),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy4-6">
+	<variable name="4-orderby-6">
 		<value condition="SubString(Skin.String(4-WidgetList-6),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(4-WidgetList-6),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy4-7">
+	<variable name="4-orderby-7">
 		<value condition="SubString(Skin.String(4-WidgetList-7),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(4-WidgetList-7),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy4-8">
+	<variable name="4-orderby-8">
 		<value condition="SubString(Skin.String(4-WidgetList-8),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(4-WidgetList-8),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy5-1">
+	<variable name="5-orderby-1">
 		<value condition="SubString(Skin.String(5-WidgetList-1),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(5-WidgetList-1),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy5-2">
+	<variable name="5-orderby-2">
 		<value condition="SubString(Skin.String(5-WidgetList-2),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(5-WidgetList-2),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy5-3">
+	<variable name="5-orderby-3">
 		<value condition="SubString(Skin.String(5-WidgetList-3),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(5-WidgetList-3),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy5-4">
+	<variable name="5-orderby-4">
 		<value condition="SubString(Skin.String(5-WidgetList-4),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(5-WidgetList-4),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy5-5">
+	<variable name="5-orderby-5">
 		<value condition="SubString(Skin.String(5-WidgetList-5),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(5-WidgetList-5),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy5-6">
+	<variable name="5-orderby-6">
 		<value condition="SubString(Skin.String(5-WidgetList-6),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(5-WidgetList-6),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy5-7">
+	<variable name="5-orderby-7">
 		<value condition="SubString(Skin.String(5-WidgetList-7),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(5-WidgetList-7),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy5-8">
+	<variable name="5-orderby-8">
 		<value condition="SubString(Skin.String(5-WidgetList-8),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(5-WidgetList-8),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy6-1">
+	<variable name="6-orderby-1">
 		<value condition="SubString(Skin.String(6-WidgetList-1),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(6-WidgetList-1),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy6-2">
+	<variable name="6-orderby-2">
 		<value condition="SubString(Skin.String(6-WidgetList-2),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(6-WidgetList-2),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy6-3">
+	<variable name="6-orderby-3">
 		<value condition="SubString(Skin.String(6-WidgetList-3),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(6-WidgetList-3),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy6-4">
+	<variable name="6-orderby-4">
 		<value condition="SubString(Skin.String(6-WidgetList-4),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(6-WidgetList-4),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy6-5">
+	<variable name="6-orderby-5">
 		<value condition="SubString(Skin.String(6-WidgetList-5),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(6-WidgetList-5),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy6-6">
+	<variable name="6-orderby-6">
 		<value condition="SubString(Skin.String(6-WidgetList-6),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(6-WidgetList-6),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy6-7">
+	<variable name="6-orderby-7">
 		<value condition="SubString(Skin.String(6-WidgetList-7),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(6-WidgetList-7),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy6-8">
+	<variable name="6-orderby-8">
 		<value condition="SubString(Skin.String(6-WidgetList-8),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(6-WidgetList-8),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy7-1">
+	<variable name="7-orderby-1">
 		<value condition="SubString(Skin.String(7-WidgetList-1),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(7-WidgetList-1),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy7-2">
+	<variable name="7-orderby-2">
 		<value condition="SubString(Skin.String(7-WidgetList-2),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(7-WidgetList-2),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy7-3">
+	<variable name="7-orderby-3">
 		<value condition="SubString(Skin.String(7-WidgetList-3),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(7-WidgetList-3),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy7-4">
+	<variable name="7-orderby-4">
 		<value condition="SubString(Skin.String(7-WidgetList-4),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(7-WidgetList-4),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy7-5">
+	<variable name="7-orderby-5">
 		<value condition="SubString(Skin.String(7-WidgetList-5),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(7-WidgetList-5),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy7-6">
+	<variable name="7-orderby-6">
 		<value condition="SubString(Skin.String(7-WidgetList-6),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(7-WidgetList-6),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy7-7">
+	<variable name="7-orderby-7">
 		<value condition="SubString(Skin.String(7-WidgetList-7),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(7-WidgetList-7),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy7-8">
+	<variable name="7-orderby-8">
 		<value condition="SubString(Skin.String(7-WidgetList-8),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(7-WidgetList-8),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy8-1">
+	<variable name="8-orderby-1">
 		<value condition="SubString(Skin.String(8-WidgetList-1),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(8-WidgetList-1),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy8-2">
+	<variable name="8-orderby-2">
 		<value condition="SubString(Skin.String(8-WidgetList-2),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(8-WidgetList-2),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy8-3">
+	<variable name="8-orderby-3">
 		<value condition="SubString(Skin.String(8-WidgetList-3),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(8-WidgetList-3),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy8-4">
+	<variable name="8-orderby-4">
 		<value condition="SubString(Skin.String(8-WidgetList-4),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(8-WidgetList-4),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy8-5">
+	<variable name="8-orderby-5">
 		<value condition="SubString(Skin.String(8-WidgetList-5),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(8-WidgetList-5),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy8-6">
+	<variable name="8-orderby-6">
 		<value condition="SubString(Skin.String(8-WidgetList-6),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(8-WidgetList-6),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy8-7">
+	<variable name="8-orderby-7">
 		<value condition="SubString(Skin.String(8-WidgetList-7),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(8-WidgetList-7),musicdb://artists/)">artist</value>
 	</variable>
-	<variable name="SortBy8-8">
+	<variable name="8-orderby-8">
 		<value condition="SubString(Skin.String(8-WidgetList-8),addons://sources/)">label</value>
+		<value condition="SubString(Skin.String(8-WidgetList-8),musicdb://artists/)">artist</value>
 	</variable>
 	<variable name="HigherLevels">
 		<value condition="SubString(Skin.String(HigherLevels),off)">$LOCALIZE[31208]</value>
@@ -452,23 +668,85 @@
 		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetAction-8)]</value>
 		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetAction-8)]</value>
 	</variable>
-	<variable name="WidgetView">
-		<value condition="StringCompare(Window(home).Property(SubMenu),1) + !IsEmpty(Skin.String(1-WidgetView))">$INFO[Skin.String(1-WidgetView)]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),2) + !IsEmpty(Skin.String(2-WidgetView))">$INFO[Skin.String(2-WidgetView)]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),3) + !IsEmpty(Skin.String(3-WidgetView))">$INFO[Skin.String(3-WidgetView)]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),4) + !IsEmpty(Skin.String(4-WidgetView))">$INFO[Skin.String(4-WidgetView)]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),5) + !IsEmpty(Skin.String(5-WidgetView))">$INFO[Skin.String(5-WidgetView)]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),6) + !IsEmpty(Skin.String(6-WidgetView))">$INFO[Skin.String(6-WidgetView)]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),7) + !IsEmpty(Skin.String(7-WidgetView))">$INFO[Skin.String(7-WidgetView)]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),8) + !IsEmpty(Skin.String(8-WidgetView))">$INFO[Skin.String(8-WidgetView)]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),1) + IsEmpty(Skin.String(1-WidgetView))">$LOCALIZE[31203]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),2) + IsEmpty(Skin.String(2-WidgetView))">$LOCALIZE[31203]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),3) + IsEmpty(Skin.String(3-WidgetView))">$LOCALIZE[31203]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),4) + IsEmpty(Skin.String(4-WidgetView))">$LOCALIZE[31203]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),5) + IsEmpty(Skin.String(5-WidgetView))">$LOCALIZE[31203]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),6) + IsEmpty(Skin.String(6-WidgetView))">$LOCALIZE[31203]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),7) + IsEmpty(Skin.String(7-WidgetView))">$LOCALIZE[31203]</value>
-		<value condition="StringCompare(Window(home).Property(SubMenu),8) + IsEmpty(Skin.String(8-WidgetView))">$LOCALIZE[31203]</value>
+	<variable name="WidgetStyle-1">
+		<value condition="StringCompare(Window(home).Property(SubMenu),1)">$INFO[Skin.String(1-WidgetStyle-1)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),2)">$INFO[Skin.String(2-WidgetStyle-1)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),3)">$INFO[Skin.String(3-WidgetStyle-1)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),4)">$INFO[Skin.String(4-WidgetStyle-1)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),5)">$INFO[Skin.String(5-WidgetStyle-1)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),6)">$INFO[Skin.String(6-WidgetStyle-1)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetStyle-1)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetStyle-1)]</value>
+	</variable>
+	<variable name="WidgetStyle-2">
+		<value condition="StringCompare(Window(home).Property(SubMenu),1)">$INFO[Skin.String(1-WidgetStyle-2)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),2)">$INFO[Skin.String(2-WidgetStyle-2)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),3)">$INFO[Skin.String(3-WidgetStyle-2)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),4)">$INFO[Skin.String(4-WidgetStyle-2)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),5)">$INFO[Skin.String(5-WidgetStyle-2)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),6)">$INFO[Skin.String(6-WidgetStyle-2)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetStyle-2)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetStyle-2)]</value>
+	</variable>
+	<variable name="WidgetStyle-3">
+		<value condition="StringCompare(Window(home).Property(SubMenu),1)">$INFO[Skin.String(1-WidgetStyle-3)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),2)">$INFO[Skin.String(2-WidgetStyle-3)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),3)">$INFO[Skin.String(3-WidgetStyle-3)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),4)">$INFO[Skin.String(4-WidgetStyle-3)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),5)">$INFO[Skin.String(5-WidgetStyle-3)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),6)">$INFO[Skin.String(6-WidgetStyle-3)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetStyle-3)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetStyle-3)]</value>
+	</variable>
+	<variable name="WidgetStyle-4">
+		<value condition="StringCompare(Window(home).Property(SubMenu),1)">$INFO[Skin.String(1-WidgetStyle-4)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),2)">$INFO[Skin.String(2-WidgetStyle-4)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),3)">$INFO[Skin.String(3-WidgetStyle-4)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),4)">$INFO[Skin.String(4-WidgetStyle-4)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),5)">$INFO[Skin.String(5-WidgetStyle-4)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),6)">$INFO[Skin.String(6-WidgetStyle-4)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetStyle-4)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetStyle-4)]</value>
+	</variable>
+	<variable name="WidgetStyle-5">
+		<value condition="StringCompare(Window(home).Property(SubMenu),1)">$INFO[Skin.String(1-WidgetStyle-5)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),2)">$INFO[Skin.String(2-WidgetStyle-5)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),3)">$INFO[Skin.String(3-WidgetStyle-5)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),4)">$INFO[Skin.String(4-WidgetStyle-5)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),5)">$INFO[Skin.String(5-WidgetStyle-5)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),6)">$INFO[Skin.String(6-WidgetStyle-5)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetStyle-5)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetStyle-5)]</value>
+	</variable>
+	<variable name="WidgetStyle-6">
+		<value condition="StringCompare(Window(home).Property(SubMenu),1)">$INFO[Skin.String(1-WidgetStyle-6)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),2)">$INFO[Skin.String(2-WidgetStyle-6)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),3)">$INFO[Skin.String(3-WidgetStyle-6)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),4)">$INFO[Skin.String(4-WidgetStyle-6)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),5)">$INFO[Skin.String(5-WidgetStyle-6)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),6)">$INFO[Skin.String(6-WidgetStyle-6)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetStyle-6)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetStyle-6)]</value>
+	</variable>
+	<variable name="WidgetStyle-7">
+		<value condition="StringCompare(Window(home).Property(SubMenu),1)">$INFO[Skin.String(1-WidgetStyle-7)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),2)">$INFO[Skin.String(2-WidgetStyle-7)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),3)">$INFO[Skin.String(3-WidgetStyle-7)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),4)">$INFO[Skin.String(4-WidgetStyle-7)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),5)">$INFO[Skin.String(5-WidgetStyle-7)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),6)">$INFO[Skin.String(6-WidgetStyle-7)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetStyle-7)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetStyle-7)]</value>
+	</variable>
+	<variable name="WidgetStyle-8">
+		<value condition="StringCompare(Window(home).Property(SubMenu),1)">$INFO[Skin.String(1-WidgetStyle-8)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),2)">$INFO[Skin.String(2-WidgetStyle-8)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),3)">$INFO[Skin.String(3-WidgetStyle-8)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),4)">$INFO[Skin.String(4-WidgetStyle-8)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),5)">$INFO[Skin.String(5-WidgetStyle-8)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),6)">$INFO[Skin.String(6-WidgetStyle-8)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),7)">$INFO[Skin.String(7-WidgetStyle-8)]</value>
+		<value condition="StringCompare(Window(home).Property(SubMenu),8)">$INFO[Skin.String(8-WidgetStyle-8)]</value>
 	</variable>
 	<variable name="NextEpisodeCountdown">
 		<value condition="IntegerGreaterThan(Player.TimeRemaining,29)">osd/countdown/30.png</value>
@@ -899,6 +1177,7 @@
 		<value condition="ControlGroup(9).HasFocus(17)">$LOCALIZE[31034]</value>
 		<value condition="ControlGroup(9).HasFocus(18)">$LOCALIZE[31150]</value>
 		<value condition="ControlGroup(9).HasFocus(19)">$LOCALIZE[31143]</value>
+		<value condition="ControlGroup(9).HasFocus(20)">$LOCALIZE[31226]</value>
 		<value condition="ControlGroup(9).HasFocus(21)">$LOCALIZE[31039]</value>
 		<value condition="ControlGroup(9).HasFocus(22)">$LOCALIZE[31040]</value>
 	</variable>
@@ -980,6 +1259,8 @@
 		<value condition="Control.IsVisible(55)">55</value>
 		<value condition="Control.IsVisible(56)">56</value>
 		<value condition="Control.IsVisible(57)">57</value>
+		<value condition="Control.IsVisible(60)">60</value>
+		<value condition="Control.IsVisible(61)">61</value>
 		<value>50</value>
 	</variable>
 	<variable name="WideImage">
@@ -1243,58 +1524,58 @@
 		<value>$LOCALIZE[31059]</value>
 	</variable>
 	<variable name="Day0">
-		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[11]) | StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[12]) | StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[13]) | StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[14]) | StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[15]) | StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[16]) | StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[17]) | StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
 	</variable>
 	<variable name="Day1">
-		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[11]) | StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[12]) | StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[13]) | StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[14]) | StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[15]) | StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[16]) | StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[17]) | StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
 	</variable>
 	<variable name="Day2">
-		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[11]) | StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[12]) | StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[13]) | StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[14]) | StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[15]) | StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[16]) | StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[17]) | StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
 	</variable>
 	<variable name="Day3">
-		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[11]) | StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[12]) | StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[13]) | StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[14]) | StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[15]) | StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[16]) | StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[17]) | StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
 	</variable>
 	<variable name="Day4">
-		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[11]) | StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[12]) | StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[13]) | StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[14]) | StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[15]) | StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[16]) | StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[17]) | StringCompare(Window(Weather).Property(Day4.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
 	</variable>
 	<variable name="Day5">
-		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
-		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[11]) | StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[41])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[12]) | StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[42])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[13]) | StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[43])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[14]) | StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[44])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[15]) | StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[45])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[16]) | StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[46])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[17]) | StringCompare(Window(Weather).Property(Day5.Title),$LOCALIZE[47])">$LOCALIZE[47]</value>
 	</variable>
 	<variable name="VideoInfoLabel">
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Title]$INFO[ListItem.TVShowTitle, / ]</value>

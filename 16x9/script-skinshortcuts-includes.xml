@@ -9,9 +9,9 @@
 			<thumb />
 			<property name="labelID">script.globalsearch</property>
 			<property name="defaultID">script.globalsearch</property>
-			<onclick>RunAddOn(script.globalsearch)</onclick>
-			<property name="path">RunAddOn(script.globalsearch)</property>
-			<property name="list">RunAddOn(script.globalsearch)</property>
+			<onclick>RunScript(script.globalsearch)</onclick>
+			<property name="path">RunScript(script.globalsearch)</property>
+			<property name="list">RunScript(script.globalsearch)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">script-globalsearch</property>
 			<property name="group">mainmenu</property>
@@ -63,6 +63,8 @@
 			<thumb />
 			<property name="labelID">1036</property>
 			<property name="defaultID">favourites</property>
+			<property name="widgetName">Favourites</property>
+			<property name="widget">favourites</property>
 			<onclick>ActivateWindow(favourites)</onclick>
 			<property name="path">ActivateWindow(favourites)</property>
 			<property name="list">favourites</property>
@@ -109,7 +111,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUM[7]</property>
-			<label>$LOCALIZE[31101]</label>
+			<label>Apps</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultProgram.png</icon>
 			<thumb />
@@ -127,7 +129,7 @@
 		</item>
 		<item id="8">
 			<property name="id">$NUM[8]</property>
-			<label>$LOCALIZE[31100]</label>
+			<label>Photos</label>
 			<label2>Common Shortcut</label2>
 			<icon>DefaultPicture.png</icon>
 			<thumb />
